@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanilla-enhanced",
+	"version": "${version}",
+	"name": "Vanilla Enhanced",
+	"description": "Experience complete system overhauls, base game changes and vanilla-friendly additions with Vanilla Enhanced",
+	"authors": [
+		"Hollow - Samuel"
+	],
+	"contact": {
+		"homepage": "https://bsky.app/profile/hollow-art.bsky.social",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vanilla-enhanced/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"hollow.vanillaenhanced.VanillaEnhanced"
+		],
+		"fabric-datagen": [
+			"hollow.vanillaenhanced.VanillaEnhancedDataGenerator"
+		],
+		"client": [
+			"hollow.vanillaenhanced.VanillaEnhancedClient"
+		]
+	},
+	"mixins": [
+		"vanilla-enhanced.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
