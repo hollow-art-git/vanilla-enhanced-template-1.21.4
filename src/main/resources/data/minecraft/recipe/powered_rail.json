@@ -2,19 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "g g",
+    "c c",
     "c/c",
-    "gRg"
+    "cRc"
   ],
   "key": {
-    "g": "minecraft:gold_ingot",
     "c": "minecraft:copper_ingot",
     "/": "minecraft:stick",
     "R": "minecraft:redstone"
   },
   "result": {
-    "count": 3,
-    "id": "vanilla-enhanced:super_powered_rail"
-  },
-  "group": "super_powered_rail"
+    "count": 6,
+    "id": "minecraft:powered_rail"
+  }
 }
