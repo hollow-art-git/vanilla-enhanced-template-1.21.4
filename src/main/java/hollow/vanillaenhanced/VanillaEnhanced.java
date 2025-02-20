@@ -17,5 +17,6 @@ public class VanillaEnhanced implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.initialize();
+		ModBlocks.initialize();
 	}
 }

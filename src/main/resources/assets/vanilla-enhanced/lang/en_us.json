@@ -1,3 +1,6 @@
 {
-  "item.vanilla-enhanced.super_powered_rail": "Super Powered Rail"
+  "itemGroup.vanilla-enhanced": "Vanilla Enhanced",
+
+  "item.vanilla-enhanced.super_powered_rail": "Super Powered Rail",
+  "item.vanilla-enhanced.echo_block": "Echo Block"
 }
