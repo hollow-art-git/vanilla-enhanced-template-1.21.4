@@ -7,18 +7,10 @@
     "gRg"
   ],
   "key": {
-    "g": {
-      "item": "minecraft:gold_ingot"
-    },
-    "C": {
-      "item": "minecraft:copper_block"
-    },
-    "/": {
-      "item": "minecraft:stick"
-    },
-    "R": {
-      "item": "minecraft:redstone"
-    }
+    "g": "minecraft:gold_ingot",
+    "C": "minecraft:copper_block",
+    "/": "minecraft:stick",
+    "R": "minecraft:redstone"
   },
   "result": {
     "count": 6,
