@@ -34,7 +34,9 @@ public class ModBlocks {
 
     // --- ECHO BLOCK ---
     public static final RegistryKey<Block> ECHO_BLOCK_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "echo_block"));
-    public static final Block ECHO_BLOCK = register(new Block(AbstractBlock.Settings.create().registryKey(ECHO_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_BLOCK)), ECHO_BLOCK_KEY, true);
+    public static final Block ECHO_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().registryKey(ECHO_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool().strength(1.5f)),
+            ECHO_BLOCK_KEY, true);
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ModItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
