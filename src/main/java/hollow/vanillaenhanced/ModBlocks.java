@@ -38,9 +38,17 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().registryKey(ECHO_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool().strength(1.5f)),
             ECHO_BLOCK_KEY, true);
 
+    // --- SUPER POWERED RAIL ---
+    public static final RegistryKey<Block> SUPER_POWERED_RAIL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "super_powered_rail"));
+    public static final Block SUPER_POWERED_RAIL = register(
+            new Block(AbstractBlock.Settings.create().registryKey(SUPER_POWERED_RAIL_KEY).strength(0.7f).nonOpaque()),
+            SUPER_POWERED_RAIL_KEY, true);
+
+    // --- INITIALIZER ---
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ModItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(ModBlocks.ECHO_BLOCK.asItem());
+            itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
         });
     }
 }
