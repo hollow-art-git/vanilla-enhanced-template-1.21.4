@@ -43,8 +43,7 @@ public class ModItems {
         // --- STANDARD GROUPS ---
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register((itemGroup) -> {
-            //itemGroup.add(ModItems.SUPER_POWERED_RAIL);
-            itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
+
         });
 
         // --- VANILLA ENHANCED GROUP ---
@@ -52,8 +51,7 @@ public class ModItems {
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
-            //itemGroup.add(ModItems.SUPER_POWERED_RAIL);
-            itemGroup.add(ModBlocks.ECHO_BLOCK.asItem());
+
         });
     }
 }

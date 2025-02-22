@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -44,11 +45,48 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().registryKey(SUPER_POWERED_RAIL_KEY).strength(0.7f).nonOpaque()),
             SUPER_POWERED_RAIL_KEY, true);
 
+    // --- DIORITE ---
+    public static final RegistryKey<Block> DIORITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "diorite_bricks"));
+    public static final Block DIORITE_BRICKS = register(
+            new Block(AbstractBlock.Settings.create().registryKey(DIORITE_BRICKS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            DIORITE_BRICKS_KEY, true);
+
+    // --- GRANITE ---
+    public static final RegistryKey<Block> GRANITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "granite_bricks"));
+    public static final Block GRANITE_BRICKS = register(
+            new Block(AbstractBlock.Settings.create().registryKey(GRANITE_BRICKS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            GRANITE_BRICKS_KEY, true);
+
+    // --- ANDESITE ---
+    public static final RegistryKey<Block> ANDESITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "andesite_bricks"));
+    public static final Block ANDESITE_BRICKS = register(
+            new Block(AbstractBlock.Settings.create().registryKey(ANDESITE_BRICKS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            ANDESITE_BRICKS_KEY, true);
+
     // --- INITIALIZER ---
     public static void initialize() {
+
+        // --- VANILLA GROUPS ---
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> {
+            itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register((itemGroup) -> {
+            itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
+            itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.ANDESITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS.asItem());
+
+        });
+
+        // --- MOD GROUP ---
         ItemGroupEvents.modifyEntriesEvent(ModItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
             itemGroup.add(ModBlocks.ECHO_BLOCK.asItem());
             itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
+            itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.ANDESITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS.asItem());
         });
     }
 }
