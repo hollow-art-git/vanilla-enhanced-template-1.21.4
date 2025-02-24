@@ -2,6 +2,8 @@
   "values": [
     "vanilla-enhanced:echo_block",
     "vanilla-enhanced:andesite_bricks",
+    "vanilla-enhanced:andesite_bricks_slab",
+    "vanilla-enhanced:andesite_bricks_stairs",
     "vanilla-enhanced:chiseled_andesite",
     "vanilla-enhanced:granite_bricks",
     "vanilla-enhanced:diorite_bricks",

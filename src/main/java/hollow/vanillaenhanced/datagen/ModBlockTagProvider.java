@@ -19,6 +19,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ECHO_BLOCK)
                 .add(ModBlocks.ANDESITE_BRICKS)
+                .add(ModBlocks.ANDESITE_BRICKS_SLAB)
+                .add(ModBlocks.ANDESITE_BRICKS_STAIRS)
                 .add(ModBlocks.CHISELED_ANDESITE)
                 .add(ModBlocks.GRANITE_BRICKS)
                 .add(ModBlocks.DIORITE_BRICKS)
