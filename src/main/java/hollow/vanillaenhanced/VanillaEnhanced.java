@@ -1,6 +1,6 @@
 package hollow.vanillaenhanced;
 
-import hollow.vanillaenhanced.item.ModItems;
+import hollow.vanillaenhanced.classes.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
