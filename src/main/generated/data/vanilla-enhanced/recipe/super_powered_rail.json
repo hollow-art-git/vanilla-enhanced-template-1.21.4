@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "multi-bench",
+  "key": {
+    "/": "minecraft:stick",
+    "c": "minecraft:copper_ingot",
+    "g": "minecraft:gold_ingot",
+    "r": "minecraft:redstone"
+  },
+  "pattern": [
+    "g g",
+    "c/c",
+    "grg"
+  ],
+  "result": {
+    "count": 3,
+    "id": "vanilla-enhanced:super_powered_rail"
+  }
+}

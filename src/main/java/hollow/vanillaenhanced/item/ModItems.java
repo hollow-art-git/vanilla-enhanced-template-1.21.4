@@ -29,6 +29,24 @@ public class ModItems {
         return item;
     }
 
+    /*{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:rabbit_hide",
+    "-": "minecraft:string"
+  },
+  "pattern": [
+    " - ",
+    "# #",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bundle"
+  }
+}*/
+
     // --- CUSTOM GROUP ---
 
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(VanillaEnhanced.MOD_ID, "item_group"));

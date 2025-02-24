@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "multi-bench",
+  "key": {
+    "x": "minecraft:echo_shard"
+  },
+  "pattern": [
+    "xx",
+    "xx"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-enhanced:echo_block"
+  }
+}

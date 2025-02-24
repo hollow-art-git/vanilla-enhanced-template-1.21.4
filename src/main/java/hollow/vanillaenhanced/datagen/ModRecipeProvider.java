@@ -35,12 +35,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_BLOCK, 1)
                         .pattern("xx")
                         .pattern("xx")
-                        .input('w', Items.ECHO_SHARD)
+                        .input('x', Items.ECHO_SHARD)
                         .group("multi-bench")
                         .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
                         .offerTo(exporter);
 
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_BLOCK, 1)
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUPER_POWERED_RAIL, 3)
                         .pattern("g g")
                         .pattern("c/c")
                         .pattern("grg")
@@ -51,6 +51,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("multi-bench")
                         .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                         .offerTo(exporter);
+
 
                 // --- SMELTING ---
 

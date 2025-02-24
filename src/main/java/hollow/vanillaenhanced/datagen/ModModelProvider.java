@@ -19,7 +19,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_ANDESITE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIORITE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRANITE_BRICKS);
-        blockStateModelGenerator.registerStraightRail(ModBlocks.SUPER_POWERED_RAIL);
+        //blockStateModelGenerator.registerStraightRail(ModBlocks.SUPER_POWERED_RAIL);
     }
 
     @Override
