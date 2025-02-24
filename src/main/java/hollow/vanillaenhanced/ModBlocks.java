@@ -1,9 +1,10 @@
 package hollow.vanillaenhanced;
 
-import hollow.vanillaenhanced.classes.ModItems;
+import hollow.vanillaenhanced.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
