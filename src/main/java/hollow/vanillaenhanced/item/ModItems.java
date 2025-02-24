@@ -1,6 +1,6 @@
 package hollow.vanillaenhanced.item;
 
-import hollow.vanillaenhanced.ModBlocks;
+import hollow.vanillaenhanced.block.ModBlocks;
 import hollow.vanillaenhanced.VanillaEnhanced;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -8,17 +8,25 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import java.util.function.Function;
+
 public class ModItems {
 
-    public static Item register(Item item, RegistryKey<Item> registryKey) {
-        // Register the item.
-        Item registeredItem = Registry.register(Registries.ITEM, registryKey.getValue(), item);
+    public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
+        // Create the item key.
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(VanillaEnhanced.MOD_ID, name));
 
-        // Return the registered item!
-        return registeredItem;
+        // Create the item instance.
+        Item item = itemFactory.apply(settings.registryKey(itemKey));
+
+        // Register the item.
+        Registry.register(Registries.ITEM, itemKey, item);
+
+        return item;
     }
 
     // --- CUSTOM GROUP ---

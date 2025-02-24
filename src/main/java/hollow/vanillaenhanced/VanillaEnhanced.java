@@ -1,5 +1,6 @@
 package hollow.vanillaenhanced;
 
+import hollow.vanillaenhanced.block.ModBlocks;
 import hollow.vanillaenhanced.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
