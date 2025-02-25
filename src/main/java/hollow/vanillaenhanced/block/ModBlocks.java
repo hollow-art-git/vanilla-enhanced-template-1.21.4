@@ -3,8 +3,8 @@ package hollow.vanillaenhanced.block;
 import hollow.vanillaenhanced.VanillaEnhanced;
 import hollow.vanillaenhanced.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -65,18 +65,25 @@ public class ModBlocks {
 
     public static final RegistryKey<Block> ANDESITE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "andesite_bricks_slab"));
     public static final Block ANDESITE_BRICKS_SLAB = register(
-            new Block(AbstractBlock.Settings.create().registryKey(ANDESITE_BRICKS_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(ANDESITE_BRICKS_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
             ANDESITE_BRICKS_SLAB_KEY, true);
 
     public static final RegistryKey<Block> ANDESITE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "andesite_bricks_stairs"));
     public static final Block ANDESITE_BRICKS_STAIRS = register(
-            new Block(AbstractBlock.Settings.create().registryKey(ANDESITE_BRICKS_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            new StairsBlock(ModBlocks.ANDESITE_BRICKS.getDefaultState(), AbstractBlock.Settings.create().registryKey(ANDESITE_BRICKS_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
             ANDESITE_BRICKS_STAIRS_KEY, true);
 
     public static final RegistryKey<Block> ANDESITE_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "andesite_bricks_wall"));
     public static final Block ANDESITE_BRICKS_WALL = register(
-            new Block(AbstractBlock.Settings.create().registryKey(ANDESITE_BRICKS_WALL_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            new WallBlock(AbstractBlock.Settings.create().registryKey(ANDESITE_BRICKS_WALL_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
             ANDESITE_BRICKS_WALL_KEY, true);
+
+    public static final BlockFamily ANDESITE_FAMILY =
+            new BlockFamily.Builder(ModBlocks.ANDESITE_BRICKS)
+                    .stairs(ModBlocks.ANDESITE_BRICKS_STAIRS)
+                    .slab(ModBlocks.ANDESITE_BRICKS_SLAB)
+                    .fence(ModBlocks.ANDESITE_BRICKS_WALL)
+                    .build();
 
     public static final RegistryKey<Block> CHISELED_ANDESITE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "chiseled_andesite"));
     public static final Block CHISELED_ANDESITE = register(

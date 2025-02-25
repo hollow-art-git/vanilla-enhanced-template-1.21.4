@@ -21,11 +21,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ANDESITE_BRICKS)
                 .add(ModBlocks.ANDESITE_BRICKS_SLAB)
                 .add(ModBlocks.ANDESITE_BRICKS_STAIRS)
+                .add(ModBlocks.ANDESITE_BRICKS_WALL)
                 .add(ModBlocks.CHISELED_ANDESITE)
                 .add(ModBlocks.GRANITE_BRICKS)
                 .add(ModBlocks.DIORITE_BRICKS)
                 .add(ModBlocks.SUPER_POWERED_RAIL);
 
-
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ANDESITE_BRICKS_WALL);
     }
 }
