@@ -3,11 +3,19 @@
 
   "item.vanilla-enhanced.super_powered_rail": "Super Powered Rail",
   "item.vanilla-enhanced.echo_block": "Echo Block",
-  "item.vanilla-enhanced.diorite_bricks": "Diorite Bricks",
   "item.vanilla-enhanced.andesite_bricks": "Andesite Bricks",
   "item.vanilla-enhanced.andesite_bricks_slab": "Andesite Bricks Slab",
   "item.vanilla-enhanced.andesite_bricks_stairs": "Andesite Bricks Stairs",
   "item.vanilla-enhanced.andesite_bricks_wall": "Andesite Bricks Wall",
   "item.vanilla-enhanced.chiseled_andesite": "Chiseled Andesite",
-  "item.vanilla-enhanced.granite_bricks": "Granite Bricks"
+
+  "item.vanilla-enhanced.granite_bricks": "Granite Bricks",
+  "item.vanilla-enhanced.granite_bricks_slab": "Granite Bricks Slab",
+  "item.vanilla-enhanced.granite_bricks_stairs": "Granite Bricks Stairs",
+  "item.vanilla-enhanced.granite_bricks_wall": "Granite Bricks Wall",
+
+  "item.vanilla-enhanced.diorite_bricks": "Diorite Bricks",
+  "item.vanilla-enhanced.diorite_bricks_slab": "Diorite Bricks Slab",
+  "item.vanilla-enhanced.diorite_bricks_stairs": "Diorite Bricks Stairs",
+  "item.vanilla-enhanced.diorite_bricks_wall": "Diorite Bricks Wall"
 }

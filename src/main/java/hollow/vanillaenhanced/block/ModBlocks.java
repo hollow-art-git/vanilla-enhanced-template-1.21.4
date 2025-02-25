@@ -42,7 +42,7 @@ public class ModBlocks {
     // --- SUPER POWERED RAIL ---
     public static final RegistryKey<Block> SUPER_POWERED_RAIL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "super_powered_rail"));
     public static final Block SUPER_POWERED_RAIL = register(
-            new Block(AbstractBlock.Settings.create().registryKey(SUPER_POWERED_RAIL_KEY).strength(0.7f).nonOpaque()),
+            new PoweredRailBlock(AbstractBlock.Settings.create().registryKey(SUPER_POWERED_RAIL_KEY).sounds(BlockSoundGroup.STONE).strength(0.7f).noCollision()),
             SUPER_POWERED_RAIL_KEY, true);
 
     // --- DIORITE ---
@@ -51,11 +51,55 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().registryKey(DIORITE_BRICKS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
             DIORITE_BRICKS_KEY, true);
 
+    public static final RegistryKey<Block> DIORITE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "diorite_bricks_slab"));
+    public static final Block DIORITE_BRICKS_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(DIORITE_BRICKS_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            DIORITE_BRICKS_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> DIORITE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "diorite_bricks_stairs"));
+    public static final Block DIORITE_BRICKS_STAIRS = register(
+            new StairsBlock(ModBlocks.DIORITE_BRICKS.getDefaultState(), AbstractBlock.Settings.create().registryKey(DIORITE_BRICKS_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            DIORITE_BRICKS_STAIRS_KEY, true);
+
+    public static final RegistryKey<Block> DIORITE_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "diorite_bricks_wall"));
+    public static final Block DIORITE_BRICKS_WALL = register(
+            new WallBlock(AbstractBlock.Settings.create().registryKey(DIORITE_BRICKS_WALL_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            DIORITE_BRICKS_WALL_KEY, true);
+
+    public static final BlockFamily DIORITE_FAMILY =
+            new BlockFamily.Builder(ModBlocks.DIORITE_BRICKS)
+                    .stairs(ModBlocks.DIORITE_BRICKS_STAIRS)
+                    .slab(ModBlocks.DIORITE_BRICKS_SLAB)
+                    .wall(ModBlocks.DIORITE_BRICKS_WALL)
+                    .build();
+
     // --- GRANITE ---
     public static final RegistryKey<Block> GRANITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "granite_bricks"));
     public static final Block GRANITE_BRICKS = register(
             new Block(AbstractBlock.Settings.create().registryKey(GRANITE_BRICKS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
             GRANITE_BRICKS_KEY, true);
+
+    public static final RegistryKey<Block> GRANITE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "granite_bricks_slab"));
+    public static final Block GRANITE_BRICKS_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(GRANITE_BRICKS_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            GRANITE_BRICKS_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> GRANITE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "granite_bricks_stairs"));
+    public static final Block GRANITE_BRICKS_STAIRS = register(
+            new StairsBlock(ModBlocks.GRANITE_BRICKS.getDefaultState(), AbstractBlock.Settings.create().registryKey(GRANITE_BRICKS_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            GRANITE_BRICKS_STAIRS_KEY, true);
+
+    public static final RegistryKey<Block> GRANITE_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "granite_bricks_wall"));
+    public static final Block GRANITE_BRICKS_WALL = register(
+            new WallBlock(AbstractBlock.Settings.create().registryKey(GRANITE_BRICKS_WALL_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            GRANITE_BRICKS_WALL_KEY, true);
+
+    public static final BlockFamily GRANITE_FAMILY =
+            new BlockFamily.Builder(ModBlocks.GRANITE_BRICKS)
+                    .stairs(ModBlocks.GRANITE_BRICKS_STAIRS)
+                    .slab(ModBlocks.GRANITE_BRICKS_SLAB)
+                    .wall(ModBlocks.GRANITE_BRICKS_WALL)
+                    .build();
 
     // --- ANDESITE ---
     public static final RegistryKey<Block> ANDESITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "andesite_bricks"));
@@ -82,7 +126,7 @@ public class ModBlocks {
             new BlockFamily.Builder(ModBlocks.ANDESITE_BRICKS)
                     .stairs(ModBlocks.ANDESITE_BRICKS_STAIRS)
                     .slab(ModBlocks.ANDESITE_BRICKS_SLAB)
-                    .fence(ModBlocks.ANDESITE_BRICKS_WALL)
+                    .wall(ModBlocks.ANDESITE_BRICKS_WALL)
                     .build();
 
     public static final RegistryKey<Block> CHISELED_ANDESITE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "chiseled_andesite"));
@@ -101,27 +145,49 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
-            itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
+
+            itemGroup.add(ModBlocks.ECHO_BLOCK.asItem());
+
             itemGroup.add(ModBlocks.ANDESITE_BRICKS.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_WALL.asItem());
             itemGroup.add(ModBlocks.CHISELED_ANDESITE.asItem());
+
             itemGroup.add(ModBlocks.GRANITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS_WALL.asItem());
+
+            itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.DIORITE_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.DIORITE_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.DIORITE_BRICKS_WALL.asItem());
 
         });
 
         // --- MOD GROUP ---
         ItemGroupEvents.modifyEntriesEvent(ModItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
+
             itemGroup.add(ModBlocks.ECHO_BLOCK.asItem());
+
             itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
-            itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
+
             itemGroup.add(ModBlocks.ANDESITE_BRICKS.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_WALL.asItem());
             itemGroup.add(ModBlocks.CHISELED_ANDESITE.asItem());
+
             itemGroup.add(ModBlocks.GRANITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.GRANITE_BRICKS_WALL.asItem());
+
+            itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.DIORITE_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.DIORITE_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.DIORITE_BRICKS_WALL.asItem());
         });
     }
 }

@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "vanilla-enhanced:block/super_powered_rail"
+    "model": "vanilla-enhanced:item/super_powered_rail"
   }
 }

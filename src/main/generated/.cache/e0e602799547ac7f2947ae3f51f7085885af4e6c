@@ -1,5 +1,7 @@
 // 1.21.4	-999999999-01-01T00:00:00	Vanilla Enhanced/Block Loot Tables
 550206321a0c72f8613a6de9b3170bcca4f19ae7 data/vanilla-enhanced/loot_table/blocks/andesite_bricks.json
+fe02da35316265d4db7418cb8f9a8d2dacefffa4 data/vanilla-enhanced/loot_table/blocks/andesite_bricks_slab.json
+d00c946de8dbca39b0455604329c14dc0ac25fad data/vanilla-enhanced/loot_table/blocks/andesite_bricks_stairs.json
 c91c1fa206dff9895667126abdc127deb7a3f2ae data/vanilla-enhanced/loot_table/blocks/chiseled_andesite.json
 9fdea72862242c79465b162ad7eab840c8018700 data/vanilla-enhanced/loot_table/blocks/diorite_bricks.json
 cd6b5ffa7f70da64087911fe88fe4a4f3241bb9b data/vanilla-enhanced/loot_table/blocks/echo_block.json

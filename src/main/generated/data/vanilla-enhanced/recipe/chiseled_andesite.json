@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:echo_shard"
+    "#": "minecraft:andesite"
   },
   "pattern": [
-    "##",
-    "##"
+    "#",
+    "#"
   ],
   "result": {
     "count": 1,
-    "id": "vanilla-enhanced:echo_block"
+    "id": "vanilla-enhanced:chiseled_andesite"
   }
 }

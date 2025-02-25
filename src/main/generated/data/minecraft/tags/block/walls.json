@@ -1,5 +1,7 @@
 {
   "values": [
-    "vanilla-enhanced:andesite_bricks_wall"
+    "vanilla-enhanced:andesite_bricks_wall",
+    "vanilla-enhanced:granite_bricks_wall",
+    "vanilla-enhanced:diorite_bricks_wall"
   ]
 }
