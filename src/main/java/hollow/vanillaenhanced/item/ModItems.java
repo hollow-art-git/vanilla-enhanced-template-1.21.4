@@ -56,12 +56,6 @@ public class ModItems {
             .displayName(Text.translatable("itemGroup.vanilla-enhanced"))
             .build();
 
-    // ---
-    /*
-    public static final RegistryKey<Item> SUPER_POWERED_RAIL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(VanillaEnhanced.MOD_ID, "super_powered_rail"));
-    public static final Item SUPER_POWERED_RAIL = register(new Item(new Item.Settings().registryKey(SUPER_POWERED_RAIL_KEY)), SUPER_POWERED_RAIL_KEY);
-    */
-
 
     public static void initialize() {
 
