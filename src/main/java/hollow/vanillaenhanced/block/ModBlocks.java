@@ -101,6 +101,11 @@ public class ModBlocks {
                     .wall(ModBlocks.GRANITE_BRICKS_WALL)
                     .build();
 
+    public static final RegistryKey<Block> CHISELED_GRANITE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "chiseled_granite"));
+    public static final Block CHISELED_GRANITE = register(
+            new Block(AbstractBlock.Settings.create().registryKey(CHISELED_GRANITE_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            CHISELED_GRANITE_KEY, true);
+
     // --- ANDESITE ---
     public static final RegistryKey<Block> ANDESITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "andesite_bricks"));
     public static final Block ANDESITE_BRICKS = register(
@@ -158,11 +163,13 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.GRANITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.GRANITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.GRANITE_BRICKS_WALL.asItem());
+            itemGroup.add(ModBlocks.CHISELED_GRANITE.asItem());
 
             itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_WALL.asItem());
+            //itemGroup.add(ModBlocks.CHISELED_DIORITE.asItem());
 
         });
 
@@ -183,11 +190,13 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.GRANITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.GRANITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.GRANITE_BRICKS_WALL.asItem());
+            itemGroup.add(ModBlocks.CHISELED_GRANITE.asItem());
 
             itemGroup.add(ModBlocks.DIORITE_BRICKS.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_WALL.asItem());
+            //itemGroup.add(ModBlocks.CHISELED_DIORITE.asItem());
         });
     }
 }

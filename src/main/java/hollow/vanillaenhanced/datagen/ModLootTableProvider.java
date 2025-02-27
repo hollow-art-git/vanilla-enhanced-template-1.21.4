@@ -19,11 +19,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ANDESITE_BRICKS);
         addDrop(ModBlocks.ANDESITE_BRICKS_SLAB, slabDrops(ModBlocks.ANDESITE_BRICKS_SLAB));
         addDrop(ModBlocks.ANDESITE_BRICKS_STAIRS);
+        addDrop(ModBlocks.ANDESITE_BRICKS_WALL);
         addDrop(ModBlocks.CHISELED_ANDESITE);
 
         addDrop(ModBlocks.GRANITE_BRICKS);
+        addDrop(ModBlocks.GRANITE_BRICKS_SLAB, slabDrops(ModBlocks.GRANITE_BRICKS_SLAB));
+        addDrop(ModBlocks.GRANITE_BRICKS_STAIRS);
+        addDrop(ModBlocks.GRANITE_BRICKS_WALL);
+        addDrop(ModBlocks.CHISELED_GRANITE);
 
         addDrop(ModBlocks.DIORITE_BRICKS);
+        addDrop(ModBlocks.DIORITE_BRICKS_SLAB, slabDrops(ModBlocks.DIORITE_BRICKS_SLAB));
+        addDrop(ModBlocks.DIORITE_BRICKS_STAIRS);
+        addDrop(ModBlocks.DIORITE_BRICKS_WALL);
+        //addDrop(ModBlocks.CHISELED_DIORITE);
 
         addDrop(ModBlocks.SUPER_POWERED_RAIL);
     }
