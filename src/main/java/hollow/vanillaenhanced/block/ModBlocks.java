@@ -73,6 +73,11 @@ public class ModBlocks {
                     .wall(ModBlocks.DIORITE_BRICKS_WALL)
                     .build();
 
+    public static final RegistryKey<Block> CHISELED_DIORITE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "chiseled_diorite"));
+    public static final Block CHISELED_DIORITE = register(
+            new Block(AbstractBlock.Settings.create().registryKey(CHISELED_DIORITE_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            CHISELED_DIORITE_KEY, true);
+
     // --- GRANITE ---
     public static final RegistryKey<Block> GRANITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "granite_bricks"));
     public static final Block GRANITE_BRICKS = register(
@@ -169,7 +174,7 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DIORITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_WALL.asItem());
-            //itemGroup.add(ModBlocks.CHISELED_DIORITE.asItem());
+            itemGroup.add(ModBlocks.CHISELED_DIORITE.asItem());
 
         });
 
@@ -196,7 +201,7 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DIORITE_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.DIORITE_BRICKS_WALL.asItem());
-            //itemGroup.add(ModBlocks.CHISELED_DIORITE.asItem());
+            itemGroup.add(ModBlocks.CHISELED_DIORITE.asItem());
         });
     }
 }

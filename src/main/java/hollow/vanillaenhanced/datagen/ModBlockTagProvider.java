@@ -32,7 +32,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DIORITE_BRICKS_SLAB)
                 .add(ModBlocks.DIORITE_BRICKS_STAIRS)
                 .add(ModBlocks.DIORITE_BRICKS_WALL)
-                //.add(ModBlocks.CHISELED_DIORITE)
+                .add(ModBlocks.CHISELED_DIORITE)
                 .add(ModBlocks.SUPER_POWERED_RAIL);
 
         getOrCreateTagBuilder(BlockTags.WALLS)

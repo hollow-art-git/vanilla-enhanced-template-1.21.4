@@ -1,3 +1,5 @@
 {
-  "item.minecraft.amethyst_block": "Amethyst Block"
+  "item.minecraft.amethyst_block": "Amethyst Block",
+  "advancements.story.enter_the_nether.description": "Build a Nether Portal out of obsidian, light it with fire and enter the Nether",
+  "advancements.nether.create_full_beacon.description": "Place a Beacon on top of a mineral block pyramid and bring it to full power"
 }
