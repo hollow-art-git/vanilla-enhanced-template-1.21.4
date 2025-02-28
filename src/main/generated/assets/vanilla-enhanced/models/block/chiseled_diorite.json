@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "vanilla-enhanced:block/chiseled_diorite"
+    "end": "vanilla-enhanced:block/chiseled_diorite_top",
+    "side": "vanilla-enhanced:block/chiseled_diorite"
   }
 }

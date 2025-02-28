@@ -108,7 +108,7 @@ public class ModBlocks {
 
     public static final RegistryKey<Block> CHISELED_GRANITE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "chiseled_granite"));
     public static final Block CHISELED_GRANITE = register(
-            new Block(AbstractBlock.Settings.create().registryKey(CHISELED_GRANITE_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
+            new PillarBlock(AbstractBlock.Settings.create().registryKey(CHISELED_GRANITE_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)),
             CHISELED_GRANITE_KEY, true);
 
     // --- ANDESITE ---
