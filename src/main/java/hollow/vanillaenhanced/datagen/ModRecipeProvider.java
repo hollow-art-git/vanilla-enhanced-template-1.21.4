@@ -63,6 +63,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createStairsRecipe(ModBlocks.DIORITE_BRICKS_STAIRS, Ingredient.ofItem(Items.DIORITE));
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_STAIRS,Items.DIORITE);
 
+
                 // --- SMELTING ---
 
                 offerSmelting(List.of(Items.ANDESITE), RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_ANDESITE, 0.1f, 200, "andesite");

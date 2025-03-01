@@ -34,6 +34,41 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DIORITE_BRICKS_WALL);
         addDrop(ModBlocks.CHISELED_DIORITE);
 
+        addDrop(ModBlocks.TERRACOTTA_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.RED_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.RED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.ORANGE_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.ORANGE_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.YELLOW_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.YELLOW_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.LIME_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.LIME_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.GREEN_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.GREEN_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.BLUE_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.BLUE_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.CYAN_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.CYAN_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.PURPLE_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.MAGENTA_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.PINK_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.PINK_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.BROWN_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.BROWN_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.BLACK_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.BLACK_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.GRAY_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.GRAY_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.WHITE_TERRACOTTA_SLAB);
+        addDrop(ModBlocks.WHITE_TERRACOTTA_STAIRS);
+
         addDrop(ModBlocks.SUPER_POWERED_RAIL);
     }
 }
