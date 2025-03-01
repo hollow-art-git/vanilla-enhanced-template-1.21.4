@@ -1,5 +1,6 @@
 {
   "item.minecraft.amethyst_block": "Amethyst Block",
   "advancements.story.enter_the_nether.description": "Build a Nether Portal out of obsidian, light it with fire and enter the Nether",
-  "advancements.nether.create_full_beacon.description": "Bring a Beacon to full power by placing it on top of a mineral block pyramid"
+  "advancements.nether.create_full_beacon.description": "Bring a Beacon to full power by placing it on top of a mineral block pyramid",
+  "advancements.husbandry.breed_an_animal.description": "Feed two animals to breed them together"
 }
