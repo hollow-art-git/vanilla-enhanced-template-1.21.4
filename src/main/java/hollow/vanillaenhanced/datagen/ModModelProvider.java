@@ -46,6 +46,23 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GRAY_TERRACOTTA).family(ModBlocks.GRAY_TERRACOTTA_FAMILY);
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_TERRACOTTA).family(ModBlocks.LIGHT_GRAY_TERRACOTTA_FAMILY);
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.WHITE_TERRACOTTA).family(ModBlocks.WHITE_TERRACOTTA_FAMILY);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_CONCRETE).family(ModBlocks.RED_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.ORANGE_CONCRETE).family(ModBlocks.ORANGE_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.YELLOW_CONCRETE).family(ModBlocks.YELLOW_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIME_CONCRETE).family(ModBlocks.LIME_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GREEN_CONCRETE).family(ModBlocks.GREEN_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.CYAN_CONCRETE).family(ModBlocks.CYAN_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_BLUE_CONCRETE).family(ModBlocks.LIGHT_BLUE_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BLUE_CONCRETE).family(ModBlocks.BLUE_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPLE_CONCRETE).family(ModBlocks.PURPLE_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.MAGENTA_CONCRETE).family(ModBlocks.MAGENTA_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PINK_CONCRETE).family(ModBlocks.PINK_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BROWN_CONCRETE).family(ModBlocks.BROWN_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BLACK_CONCRETE).family(ModBlocks.BLACK_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GRAY_CONCRETE).family(ModBlocks.GRAY_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_CONCRETE).family(ModBlocks.LIGHT_GRAY_CONCRETE_FAMILY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.WHITE_CONCRETE).family(ModBlocks.WHITE_CONCRETE_FAMILY);
     }
 
     @Override

@@ -69,6 +69,39 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WHITE_TERRACOTTA_SLAB);
         addDrop(ModBlocks.WHITE_TERRACOTTA_STAIRS);
 
+        addDrop(ModBlocks.WHITE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.WHITE_CONCRETE_SLAB);
+        addDrop(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+        addDrop(ModBlocks.GRAY_CONCRETE_STAIRS);
+        addDrop(ModBlocks.GRAY_CONCRETE_SLAB);
+        addDrop(ModBlocks.BLACK_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BLACK_CONCRETE_SLAB);
+        addDrop(ModBlocks.BROWN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BROWN_CONCRETE_SLAB);
+        addDrop(ModBlocks.RED_CONCRETE_STAIRS);
+        addDrop(ModBlocks.RED_CONCRETE_SLAB);
+        addDrop(ModBlocks.ORANGE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.ORANGE_CONCRETE_SLAB);
+        addDrop(ModBlocks.YELLOW_CONCRETE_STAIRS);
+        addDrop(ModBlocks.YELLOW_CONCRETE_SLAB);
+        addDrop(ModBlocks.LIME_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIME_CONCRETE_SLAB);
+        addDrop(ModBlocks.GREEN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.GREEN_CONCRETE_SLAB);
+        addDrop(ModBlocks.CYAN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.CYAN_CONCRETE_SLAB);
+        addDrop(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+        addDrop(ModBlocks.BLUE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BLUE_CONCRETE_SLAB);
+        addDrop(ModBlocks.PURPLE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.PURPLE_CONCRETE_SLAB);
+        addDrop(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+        addDrop(ModBlocks.MAGENTA_CONCRETE_SLAB);
+        addDrop(ModBlocks.PINK_CONCRETE_STAIRS);
+        addDrop(ModBlocks.PINK_CONCRETE_SLAB);
+
         addDrop(ModBlocks.SUPER_POWERED_RAIL);
     }
 }

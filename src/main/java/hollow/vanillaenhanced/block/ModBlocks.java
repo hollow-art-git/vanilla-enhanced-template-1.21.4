@@ -164,6 +164,20 @@ public class ModBlocks {
                     .slab(ModBlocks.RED_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> RED_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "red_concrete_slab"));
+    public static final Block RED_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(RED_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), RED_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> RED_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "red_concrete_stairs"));
+    public static final Block RED_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.RED_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(RED_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), RED_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily RED_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.RED_CONCRETE)
+                    .stairs(ModBlocks.RED_CONCRETE_STAIRS)
+                    .slab(ModBlocks.RED_CONCRETE_SLAB)
+                    .build();
+
     // --- ORANGE ---
 
     public static final RegistryKey<Block> ORANGE_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "orange_terracotta_slab"));
@@ -178,6 +192,20 @@ public class ModBlocks {
             new BlockFamily.Builder(Blocks.ORANGE_TERRACOTTA)
                     .stairs(ModBlocks.ORANGE_TERRACOTTA_STAIRS)
                     .slab(ModBlocks.ORANGE_TERRACOTTA_SLAB)
+                    .build();
+
+    public static final RegistryKey<Block> ORANGE_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "orange_concrete_slab"));
+    public static final Block ORANGE_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(ORANGE_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), ORANGE_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> ORANGE_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "orange_concrete_stairs"));
+    public static final Block ORANGE_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.ORANGE_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(ORANGE_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), ORANGE_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily ORANGE_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.ORANGE_CONCRETE)
+                    .stairs(ModBlocks.ORANGE_CONCRETE_STAIRS)
+                    .slab(ModBlocks.ORANGE_CONCRETE_SLAB)
                     .build();
 
     // --- YELLOW ---
@@ -196,6 +224,20 @@ public class ModBlocks {
                     .slab(ModBlocks.YELLOW_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> YELLOW_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "yellow_concrete_slab"));
+    public static final Block YELLOW_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(YELLOW_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), YELLOW_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> YELLOW_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "yellow_concrete_stairs"));
+    public static final Block YELLOW_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.YELLOW_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(YELLOW_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), YELLOW_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily YELLOW_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.YELLOW_CONCRETE)
+                    .stairs(ModBlocks.YELLOW_CONCRETE_STAIRS)
+                    .slab(ModBlocks.YELLOW_CONCRETE_SLAB)
+                    .build();
+
     // --- LIME ---
 
     public static final RegistryKey<Block> LIME_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "lime_terracotta_slab"));
@@ -212,11 +254,25 @@ public class ModBlocks {
                     .slab(ModBlocks.LIME_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> LIME_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "lime_concrete_slab"));
+    public static final Block LIME_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(LIME_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), LIME_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> LIME_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "lime_concrete_stairs"));
+    public static final Block LIME_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.LIME_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(LIME_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), LIME_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily LIME_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.LIME_CONCRETE)
+                    .stairs(ModBlocks.LIME_CONCRETE_STAIRS)
+                    .slab(ModBlocks.LIME_CONCRETE_SLAB)
+                    .build();
+
     // --- GREEN ---
 
     public static final RegistryKey<Block> GREEN_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "green_terracotta_slab"));
     public static final Block GREEN_TERRACOTTA_SLAB = register(
-            new SlabBlock(AbstractBlock.Settings.create().registryKey(GREEN_TERRACOTTA_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(4.2f).hardness(1.25f)), GREEN_TERRACOTTA_SLAB_KEY, true);
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(GREEN_TERRACOTTA_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(1.8f).hardness(1.25f)), GREEN_TERRACOTTA_SLAB_KEY, true);
 
     public static final RegistryKey<Block> GREEN_TERRACOTTA_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "green_terracotta_stairs"));
     public static final Block GREEN_TERRACOTTA_STAIRS = register(
@@ -226,6 +282,20 @@ public class ModBlocks {
             new BlockFamily.Builder(Blocks.GREEN_TERRACOTTA)
                     .stairs(ModBlocks.GREEN_TERRACOTTA_STAIRS)
                     .slab(ModBlocks.GREEN_TERRACOTTA_SLAB)
+                    .build();
+
+    public static final RegistryKey<Block> GREEN_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "green_concrete_slab"));
+    public static final Block GREEN_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(GREEN_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), GREEN_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> GREEN_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "green_concrete_stairs"));
+    public static final Block GREEN_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.GREEN_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(GREEN_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), GREEN_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily GREEN_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.GREEN_CONCRETE)
+                    .stairs(ModBlocks.GREEN_CONCRETE_STAIRS)
+                    .slab(ModBlocks.GREEN_CONCRETE_SLAB)
                     .build();
 
     // --- LIGHT BLUE ---
@@ -244,6 +314,20 @@ public class ModBlocks {
                     .slab(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> LIGHT_BLUE_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "light_blue_concrete_slab"));
+    public static final Block LIGHT_BLUE_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(LIGHT_BLUE_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), LIGHT_BLUE_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> LIGHT_BLUE_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "light_blue_concrete_stairs"));
+    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.LIGHT_BLUE_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(LIGHT_BLUE_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), LIGHT_BLUE_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily LIGHT_BLUE_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.LIGHT_BLUE_CONCRETE)
+                    .stairs(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS)
+                    .slab(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB)
+                    .build();
+
     // --- BLUE ---
 
     public static final RegistryKey<Block> BLUE_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "blue_terracotta_slab"));
@@ -258,6 +342,20 @@ public class ModBlocks {
             new BlockFamily.Builder(Blocks.BLUE_TERRACOTTA)
                     .stairs(ModBlocks.BLUE_TERRACOTTA_STAIRS)
                     .slab(ModBlocks.BLUE_TERRACOTTA_SLAB)
+                    .build();
+
+    public static final RegistryKey<Block> BLUE_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "blue_concrete_slab"));
+    public static final Block BLUE_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(BLUE_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), BLUE_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> BLUE_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "blue_concrete_stairs"));
+    public static final Block BLUE_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.BLUE_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(BLUE_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), BLUE_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily BLUE_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.BLUE_CONCRETE)
+                    .stairs(ModBlocks.BLUE_CONCRETE_STAIRS)
+                    .slab(ModBlocks.BLUE_CONCRETE_SLAB)
                     .build();
 
     // --- CYAN ---
@@ -276,6 +374,20 @@ public class ModBlocks {
                     .slab(ModBlocks.CYAN_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> CYAN_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "cyan_concrete_slab"));
+    public static final Block CYAN_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(CYAN_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), CYAN_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> CYAN_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "cyan_concrete_stairs"));
+    public static final Block CYAN_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.CYAN_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(CYAN_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), CYAN_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily CYAN_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.CYAN_CONCRETE)
+                    .stairs(ModBlocks.CYAN_CONCRETE_STAIRS)
+                    .slab(ModBlocks.CYAN_CONCRETE_SLAB)
+                    .build();
+
     // --- MAGENTA ---
 
     public static final RegistryKey<Block> MAGENTA_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "magenta_terracotta_slab"));
@@ -290,6 +402,20 @@ public class ModBlocks {
             new BlockFamily.Builder(Blocks.MAGENTA_TERRACOTTA)
                     .stairs(ModBlocks.MAGENTA_TERRACOTTA_STAIRS)
                     .slab(ModBlocks.MAGENTA_TERRACOTTA_SLAB)
+                    .build();
+
+    public static final RegistryKey<Block> MAGENTA_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "magenta_concrete_slab"));
+    public static final Block MAGENTA_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(MAGENTA_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), MAGENTA_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> MAGENTA_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "magenta_concrete_stairs"));
+    public static final Block MAGENTA_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.MAGENTA_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(MAGENTA_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), MAGENTA_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily MAGENTA_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.MAGENTA_CONCRETE)
+                    .stairs(ModBlocks.MAGENTA_CONCRETE_STAIRS)
+                    .slab(ModBlocks.MAGENTA_CONCRETE_SLAB)
                     .build();
 
     // --- PINK ---
@@ -308,6 +434,20 @@ public class ModBlocks {
                     .slab(ModBlocks.PINK_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> PINK_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "pink_concrete_slab"));
+    public static final Block PINK_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(PINK_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), PINK_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> PINK_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "pink_concrete_stairs"));
+    public static final Block PINK_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.PINK_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(PINK_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), PINK_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily PINK_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.PINK_CONCRETE)
+                    .stairs(ModBlocks.PINK_CONCRETE_STAIRS)
+                    .slab(ModBlocks.PINK_CONCRETE_SLAB)
+                    .build();
+
     // --- PURPLE ---
 
     public static final RegistryKey<Block> PURPLE_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "purple_terracotta_slab"));
@@ -322,6 +462,20 @@ public class ModBlocks {
             new BlockFamily.Builder(Blocks.PURPLE_TERRACOTTA)
                     .stairs(ModBlocks.PURPLE_TERRACOTTA_STAIRS)
                     .slab(ModBlocks.PURPLE_TERRACOTTA_SLAB)
+                    .build();
+
+    public static final RegistryKey<Block> PURPLE_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "purple_concrete_slab"));
+    public static final Block PURPLE_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(PURPLE_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), PURPLE_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> PURPLE_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "purple_concrete_stairs"));
+    public static final Block PURPLE_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.PURPLE_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(PURPLE_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), PURPLE_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily PURPLE_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.PURPLE_CONCRETE)
+                    .stairs(ModBlocks.PURPLE_CONCRETE_STAIRS)
+                    .slab(ModBlocks.PURPLE_CONCRETE_SLAB)
                     .build();
 
     // --- BROWN ---
@@ -340,6 +494,20 @@ public class ModBlocks {
                     .slab(ModBlocks.BROWN_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> BROWN_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "brown_concrete_slab"));
+    public static final Block BROWN_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(BROWN_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), BROWN_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> BROWN_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "brown_concrete_stairs"));
+    public static final Block BROWN_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.BROWN_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(BROWN_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), BROWN_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily BROWN_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.BROWN_CONCRETE)
+                    .stairs(ModBlocks.BROWN_CONCRETE_STAIRS)
+                    .slab(ModBlocks.BROWN_CONCRETE_SLAB)
+                    .build();
+
     // --- BLACK ---
 
     public static final RegistryKey<Block> BLACK_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "black_terracotta_slab"));
@@ -354,6 +522,20 @@ public class ModBlocks {
             new BlockFamily.Builder(Blocks.BLACK_TERRACOTTA)
                     .stairs(ModBlocks.BLACK_TERRACOTTA_STAIRS)
                     .slab(ModBlocks.BLACK_TERRACOTTA_SLAB)
+                    .build();
+
+    public static final RegistryKey<Block> BLACK_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "black_concrete_slab"));
+    public static final Block BLACK_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(BLACK_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), BLACK_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> BLACK_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "black_concrete_stairs"));
+    public static final Block BLACK_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(BLACK_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), BLACK_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily BLACK_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.BLACK_CONCRETE)
+                    .stairs(ModBlocks.BLACK_CONCRETE_STAIRS)
+                    .slab(ModBlocks.BLACK_CONCRETE_SLAB)
                     .build();
 
     // --- DARK GREY ---
@@ -372,6 +554,20 @@ public class ModBlocks {
                     .slab(ModBlocks.GRAY_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> GRAY_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "gray_concrete_slab"));
+    public static final Block GRAY_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(GRAY_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), GRAY_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> GRAY_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "gray_concrete_stairs"));
+    public static final Block GRAY_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.GRAY_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(GRAY_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), GRAY_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily GRAY_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.GRAY_CONCRETE)
+                    .stairs(ModBlocks.GRAY_CONCRETE_STAIRS)
+                    .slab(ModBlocks.GRAY_CONCRETE_SLAB)
+                    .build();
+
     // --- LIGHT GREY ---
 
     public static final RegistryKey<Block> LIGHT_GRAY_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "light_gray_terracotta_slab"));
@@ -388,6 +584,20 @@ public class ModBlocks {
                     .slab(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB)
                     .build();
 
+    public static final RegistryKey<Block> LIGHT_GRAY_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "light_gray_concrete_slab"));
+    public static final Block LIGHT_GRAY_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(LIGHT_GRAY_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), LIGHT_GRAY_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> LIGHT_GRAY_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "light_gray_concrete_stairs"));
+    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(LIGHT_GRAY_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), LIGHT_GRAY_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily LIGHT_GRAY_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.LIGHT_GRAY_CONCRETE)
+                    .stairs(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS)
+                    .slab(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB)
+                    .build();
+
     // --- WHITE ---
 
     public static final RegistryKey<Block> WHITE_TERRACOTTA_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "white_terracotta_slab"));
@@ -402,6 +612,20 @@ public class ModBlocks {
             new BlockFamily.Builder(Blocks.WHITE_TERRACOTTA)
                     .stairs(ModBlocks.WHITE_TERRACOTTA_STAIRS)
                     .slab(ModBlocks.WHITE_TERRACOTTA_SLAB)
+                    .build();
+
+    public static final RegistryKey<Block> WHITE_CONCRETE_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "white_concrete_slab"));
+    public static final Block WHITE_CONCRETE_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.create().registryKey(WHITE_CONCRETE_SLAB_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), WHITE_CONCRETE_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> WHITE_CONCRETE_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "white_concrete_stairs"));
+    public static final Block WHITE_CONCRETE_STAIRS = register(
+            new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(), AbstractBlock.Settings.create().registryKey(WHITE_CONCRETE_STAIRS_KEY).sounds(BlockSoundGroup.STONE).requiresTool().strength(1.8f)), WHITE_CONCRETE_STAIRS_KEY, true);
+
+    public static final BlockFamily WHITE_CONCRETE_FAMILY =
+            new BlockFamily.Builder(Blocks.WHITE_CONCRETE)
+                    .stairs(ModBlocks.WHITE_CONCRETE_STAIRS)
+                    .slab(ModBlocks.WHITE_CONCRETE_SLAB)
                     .build();
 
 
@@ -472,6 +696,39 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.PINK_TERRACOTTA_STAIRS.asItem());
             itemGroup.add(ModBlocks.PINK_TERRACOTTA_SLAB.asItem());
 
+            itemGroup.add(ModBlocks.WHITE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.WHITE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.GRAY_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.GRAY_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.BLACK_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.BLACK_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.BROWN_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.BROWN_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.RED_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.RED_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.ORANGE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.ORANGE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.YELLOW_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.YELLOW_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.LIME_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.LIME_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.GREEN_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.GREEN_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.CYAN_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.CYAN_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.BLUE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.BLUE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.PURPLE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.PURPLE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.MAGENTA_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.MAGENTA_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.PINK_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.PINK_CONCRETE_SLAB.asItem());
+
         });
 
         // --- MOD GROUP ---
@@ -533,6 +790,39 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.MAGENTA_TERRACOTTA_SLAB.asItem());
             itemGroup.add(ModBlocks.PINK_TERRACOTTA_STAIRS.asItem());
             itemGroup.add(ModBlocks.PINK_TERRACOTTA_SLAB.asItem());
+
+            itemGroup.add(ModBlocks.WHITE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.WHITE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.GRAY_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.GRAY_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.BLACK_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.BLACK_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.BROWN_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.BROWN_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.RED_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.RED_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.ORANGE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.ORANGE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.YELLOW_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.YELLOW_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.LIME_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.LIME_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.GREEN_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.GREEN_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.CYAN_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.CYAN_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.BLUE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.BLUE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.PURPLE_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.PURPLE_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.MAGENTA_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.MAGENTA_CONCRETE_SLAB.asItem());
+            itemGroup.add(ModBlocks.PINK_CONCRETE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.PINK_CONCRETE_SLAB.asItem());
 
         });
     }
