@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diorite_slab": {
+    "has_raw_iron_block": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:diorite_slab"
+            "items": "minecraft:raw_iron_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "vanilla-enhanced:chiseled_diorite"
+        "recipe": "minecraft:iron_block_from_smelting_raw_iron_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_diorite_slab"
+      "has_raw_iron_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "vanilla-enhanced:chiseled_diorite"
+      "minecraft:iron_block_from_smelting_raw_iron_block"
     ]
   }
 }
