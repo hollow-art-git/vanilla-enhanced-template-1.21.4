@@ -1,10 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "reinforced-stick",
+  "group": "reinforced_stick",
   "key": {
     "/": "minecraft:stick",
-    "c": "minecraft:string"
+    "c": "minecraft:clay_ball"
   },
   "pattern": [
     "/c/"

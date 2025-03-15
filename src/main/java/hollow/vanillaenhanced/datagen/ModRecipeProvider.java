@@ -110,15 +110,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createShapeless(RecipeCategory.MISC, ModItems.SHARP_STONE, 2)
                         .input(Items.FLINT, 1)
                         .input(Items.COBBLESTONE, 1)
-                        .group("sharp-stone")
+                        .group("sharp_stone")
                         .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
                         .offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.REINFORCED_STICK, 1)
                         .pattern("/c/")
-                        .input('c', Items.STRING)
+                        .input('c', Items.CLAY_BALL)
                         .input('/', Items.STICK)
-                        .group("reinforced-stick")
+                        .group("reinforced_stick")
                         .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                         .offerTo(exporter);
 
