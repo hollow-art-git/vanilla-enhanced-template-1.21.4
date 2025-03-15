@@ -10,5 +10,7 @@
   "result": {
     "count": 1,
     "id": "minecraft:copper_ingot"
-  }
+  },
+
+  "group": "copper_ingot"
 }

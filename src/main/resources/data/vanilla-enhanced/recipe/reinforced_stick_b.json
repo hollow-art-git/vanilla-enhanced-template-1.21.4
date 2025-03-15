@@ -11,5 +11,7 @@
   "result": {
     "count": 1,
     "id": "vanilla-enhanced:reinforced_stick"
-  }
+  },
+
+  "group": "reinforced_stick"
 }
