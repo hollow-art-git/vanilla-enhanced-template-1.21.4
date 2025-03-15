@@ -4,8 +4,8 @@
   "group": "multi-bench",
   "key": {
     "/": "minecraft:stick",
-    "c": "minecraft:copper_ingot",
-    "g": "minecraft:gold_ingot",
+    "c": "vanilla-enhanced:copper_nugget",
+    "g": "minecraft:gold_nugget",
     "r": "minecraft:redstone"
   },
   "pattern": [

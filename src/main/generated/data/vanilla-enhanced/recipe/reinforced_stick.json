@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "reinforced-stick",
+  "key": {
+    "/": "minecraft:stick",
+    "c": "minecraft:string"
+  },
+  "pattern": [
+    "/c/"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-enhanced:reinforced_stick"
+  }
+}
