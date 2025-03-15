@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "n": "minecraft:iron_nugget"
+    "#": "minecraft:iron_nugget"
   },
   "pattern": [
-    "n",
-    "n",
-    "n"
+    "# #",
+    "###",
+    "# #"
   ],
   "result": {
-    "count": 3,
-    "id": "minecraft:chain"
+    "count": 16,
+    "id": "minecraft:iron_bars"
   }
 }

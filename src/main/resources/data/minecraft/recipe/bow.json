@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "minecraft:string",
+    "R": "vanilla-enhanced:reinforced_stick"
+  },
+  "pattern": [
+    " #X",
+    "R X",
+    " #X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bow"
+  }
+}

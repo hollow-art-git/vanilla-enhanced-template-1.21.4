@@ -9,6 +9,8 @@ import net.minecraft.data.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -63,8 +65,70 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createStairsRecipe(ModBlocks.DIORITE_BRICKS_STAIRS, Ingredient.ofItem(Items.DIORITE));
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_STAIRS,Items.DIORITE);
 
-                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRANITE_BRICKS_SLAB, Ingredient.ofItem(Items.GRANITE));
-                createStairsRecipe(ModBlocks.GRANITE_BRICKS_STAIRS, Ingredient.ofItem(Items.GRANITE));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_SLAB, Ingredient.ofItem(Items.TERRACOTTA));
+                createStairsRecipe(ModBlocks.TERRACOTTA_STAIRS, Ingredient.ofItem(Items.TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_TERRACOTTA_SLAB, Ingredient.ofItem(Items.WHITE_TERRACOTTA));
+                createStairsRecipe(ModBlocks.WHITE_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.WHITE_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB, Ingredient.ofItem(Items.LIGHT_GRAY_TERRACOTTA));
+                createStairsRecipe(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.LIGHT_GRAY_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_TERRACOTTA_SLAB, Ingredient.ofItem(Items.GRAY_TERRACOTTA));
+                createStairsRecipe(ModBlocks.GRAY_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.GRAY_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_TERRACOTTA_SLAB, Ingredient.ofItem(Items.BLACK_TERRACOTTA));
+                createStairsRecipe(ModBlocks.BLACK_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.BLACK_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_TERRACOTTA_SLAB, Ingredient.ofItem(Items.BROWN_TERRACOTTA));
+                createStairsRecipe(ModBlocks.BROWN_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.BROWN_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_TERRACOTTA_SLAB, Ingredient.ofItem(Items.RED_TERRACOTTA));
+                createStairsRecipe(ModBlocks.RED_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.RED_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_TERRACOTTA_SLAB, Ingredient.ofItem(Items.ORANGE_TERRACOTTA));
+                createStairsRecipe(ModBlocks.ORANGE_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.ORANGE_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_TERRACOTTA_SLAB, Ingredient.ofItem(Items.YELLOW_TERRACOTTA));
+                createStairsRecipe(ModBlocks.YELLOW_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.YELLOW_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_TERRACOTTA_SLAB, Ingredient.ofItem(Items.LIME_TERRACOTTA));
+                createStairsRecipe(ModBlocks.LIME_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.LIME_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_TERRACOTTA_SLAB, Ingredient.ofItem(Items.GREEN_TERRACOTTA));
+                createStairsRecipe(ModBlocks.GREEN_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.GREEN_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_TERRACOTTA_SLAB, Ingredient.ofItem(Items.CYAN_TERRACOTTA));
+                createStairsRecipe(ModBlocks.CYAN_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.CYAN_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB, Ingredient.ofItem(Items.LIGHT_BLUE_TERRACOTTA));
+                createStairsRecipe(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.LIGHT_BLUE_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_TERRACOTTA_SLAB, Ingredient.ofItem(Items.BLUE_TERRACOTTA));
+                createStairsRecipe(ModBlocks.BLUE_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.BLUE_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_TERRACOTTA_SLAB, Ingredient.ofItem(Items.PURPLE_TERRACOTTA));
+                createStairsRecipe(ModBlocks.PURPLE_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.PURPLE_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_TERRACOTTA_SLAB, Ingredient.ofItem(Items.MAGENTA_TERRACOTTA));
+                createStairsRecipe(ModBlocks.MAGENTA_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.MAGENTA_TERRACOTTA));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_TERRACOTTA_SLAB, Ingredient.ofItem(Items.PINK_TERRACOTTA));
+                createStairsRecipe(ModBlocks.PINK_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.PINK_TERRACOTTA));
+
+                createShapeless(RecipeCategory.MISC, Items.FLINT, 1)
+                        .input(Items.GRAVEL, 2)
+                        .group("multi-bench")
+                        .criterion(hasItem(Items.GRAVEL), conditionsFromItem(Items.GRAVEL))
+                        .offerTo(exporter);
+
+
+                createShapeless(RecipeCategory.MISC, ModItems.SHARP_STONE, 2)
+                        .input(Items.FLINT, 1)
+                        .input(Items.COBBLESTONE, 1)
+                        .group("sharp-stone")
+                        .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.REINFORCED_STICK, 1)
+                        .pattern("/c/")
+                        .input('c', Items.STRING)
+                        .input('/', Items.STICK)
+                        .group("reinforced-stick")
+                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.COPPER_INGOT, 1)
+                        .pattern("ccc")
+                        .input('c', ModItems.COPPER_NUGGET)
+                        .group("multi-bench")
+                        .criterion(hasItem(ModItems.COPPER_NUGGET), conditionsFromItem(ModItems.COPPER_NUGGET))
+                        .offerTo(exporter);
+
 
 
                 // --- SMELTING ---
@@ -73,9 +137,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerSmelting(List.of(Items.GRANITE), RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_GRANITE, 0.1f, 200, "granite");
                 offerSmelting(List.of(Items.DIORITE), RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_DIORITE, 0.1f, 200, "diorite");
 
-                offerSmelting(List.of(Items.RAW_IRON_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.IRON_BLOCK, 0.1f, 200, "iron_block");
-                offerSmelting(List.of(Items.RAW_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.COPPER_BLOCK, 0.1f, 200, "copper_block");
-                offerSmelting(List.of(Items.RAW_GOLD_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.GOLD_BLOCK, 0.1f, 200, "gold_block");
+                offerSmelting(List.of(Items.RAW_IRON_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.IRON_BLOCK, 0.1f, 200, "raw_iron_block");
+                offerSmelting(List.of(Items.RAW_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.COPPER_BLOCK, 0.1f, 200, "raw_copper_block");
+                offerSmelting(List.of(Items.RAW_GOLD_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.GOLD_BLOCK, 0.1f, 200, "raw_gold_block");
+                offerBlasting(List.of(Items.RAW_IRON_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.IRON_BLOCK, 0.1f, 200, "raw_iron_block");
+                offerBlasting(List.of(Items.RAW_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.COPPER_BLOCK, 0.1f, 200, "raw_");
+                offerBlasting(List.of(Items.RAW_GOLD_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.GOLD_BLOCK, 0.1f, 200, "raw_gold_block");
+
 
                 // --- STONECUTTER ---
 
@@ -96,6 +164,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_STAIRS, Items.DIORITE);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_WALL, Items.DIORITE);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_SLAB, Items.DIORITE, 2);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.FLINT, Items.GRAVEL);
             }
         };
     }

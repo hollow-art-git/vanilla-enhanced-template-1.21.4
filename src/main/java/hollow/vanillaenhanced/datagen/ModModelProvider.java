@@ -1,6 +1,7 @@
 package hollow.vanillaenhanced.datagen;
 
 import hollow.vanillaenhanced.block.ModBlocks;
+import hollow.vanillaenhanced.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Blocks;
@@ -13,6 +14,14 @@ import net.minecraft.data.family.BlockFamily;
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.SHARP_STONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REINFORCED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
+
     }
 
     @Override
@@ -63,11 +72,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GRAY_CONCRETE).family(ModBlocks.GRAY_CONCRETE_FAMILY);
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_CONCRETE).family(ModBlocks.LIGHT_GRAY_CONCRETE_FAMILY);
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.WHITE_CONCRETE).family(ModBlocks.WHITE_CONCRETE_FAMILY);
-    }
-
-    @Override
-    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        //itemModelGenerator.register(ModBlocks.ECHO_BLOCK, Models.GENERATED);
     }
 
     @Override

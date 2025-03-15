@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "vanilla-enhanced:reinforced_stick",
+    "X": "vanilla-enhanced:sharp_stone"
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:stone_axe"
+  }
+}

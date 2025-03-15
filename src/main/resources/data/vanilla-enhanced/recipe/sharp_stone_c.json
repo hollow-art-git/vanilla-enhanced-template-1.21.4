@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:flint",
+    "minecraft:blackstone"
+  ],
+  "result": {
+    "count": 2,
+    "id": "vanilla-enhanced:sharp_stone"
+  },
+
+  "group": "sharp_stone"
+}

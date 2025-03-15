@@ -1,7 +1,11 @@
 {
   "item.minecraft.amethyst_block": "Amethyst Block",
+  "item.minecraft.iron_nugget": "Iron Bit",
+  "item.minecraft.gold_nugget": "Iron Bit",
+
   "advancements.story.enter_the_nether.description": "Build a Nether Portal out of obsidian, light it with fire and enter the Nether",
   "advancements.nether.create_full_beacon.description": "Bring a Beacon to full power by placing it on top of a mineral block pyramid",
   "advancements.husbandry.breed_an_animal.description": "Get two animals' attention with foodstuff and feed them to make them breed together",
+  "advancements.nether.charge_respawn_anchor.description": "Charge a Respawn Anchor to the maximum using Glowstone",
   "tutorial.craft_planks.description": "The recipe book in your inventory can help"
 }

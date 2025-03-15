@@ -29,23 +29,11 @@ public class ModItems {
         return item;
     }
 
-    /*{
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "#": "minecraft:rabbit_hide",
-    "-": "minecraft:string"
-  },
-  "pattern": [
-    " - ",
-    "# #",
-    " # "
-  ],
-  "result": {
-    "count": 1,
-    "id": "minecraft:bundle"
-  }
-}*/
+
+    public static final Item SHARP_STONE = register("sharp_stone", Item::new, new Item.Settings());
+    public static final Item REINFORCED_STICK = register("reinforced_stick", Item::new, new Item.Settings());
+    public static final Item COPPER_NUGGET = register("copper_nugget", Item::new, new Item.Settings());
+
 
     // --- CUSTOM GROUP ---
 
@@ -61,7 +49,10 @@ public class ModItems {
 
         // --- STANDARD GROUPS ---
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register((itemGroup) -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> {
+            itemGroup.add(ModItems.SHARP_STONE);
+            itemGroup.add(ModItems.REINFORCED_STICK);
+            itemGroup.add(ModItems.COPPER_NUGGET);
 
         });
 
@@ -70,7 +61,9 @@ public class ModItems {
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
-
+            itemGroup.add(ModItems.SHARP_STONE);
+            itemGroup.add(ModItems.REINFORCED_STICK);
+            itemGroup.add(ModItems.COPPER_NUGGET);
         });
     }
 }

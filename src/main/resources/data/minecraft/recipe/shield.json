@@ -3,11 +3,12 @@
   "category": "equipment",
   "key": {
     "W": "#minecraft:wooden_tool_materials",
-    "O": "minecraft:iron_ingot"
+    "O": "minecraft:iron_ingot",
+    "o": "minecraft:iron_nugget"
   },
   "pattern": [
     "OWO",
-    "OWO",
+    "oWo",
     " W "
   ],
   "result": {
