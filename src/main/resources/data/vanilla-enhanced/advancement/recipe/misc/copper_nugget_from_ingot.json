@@ -1,3 +1,4 @@
+
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
@@ -13,7 +14,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "vanilla-enhanced:iron_ingot_from_blasting"
+        "recipe": "vanilla-enhanced:copper_nugget_from_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +27,7 @@
   ],
   "rewards": {
     "recipes": [
-      "vanilla-enhanced:iron_ingot_from_blasting"
+      "vanilla-enhanced:copper_nugget_from_ingot"
     ]
   }
 }
