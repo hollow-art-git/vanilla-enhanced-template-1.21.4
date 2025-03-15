@@ -2,16 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "minecraft:stick",
+    "I": "minecraft:iron_block",
+    "i": "minecraft:iron_ingot",
     "x": "minecraft:iron_nugget"
   },
   "pattern": [
-    "x x",
-    "x#x",
-    "x x"
+    "iIi",
+    " x ",
+    "ixi"
   ],
   "result": {
-    "count": 24,
-    "id": "minecraft:rail"
+    "count": 1,
+    "id": "minecraft:anvil"
   }
 }

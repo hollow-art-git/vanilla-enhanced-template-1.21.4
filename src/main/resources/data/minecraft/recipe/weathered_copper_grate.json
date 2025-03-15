@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": "minecraft:weathered_copper",
+    "c": "minecraft:copper_ingot"
+  },
+  "pattern": [
+    " c ",
+    "M M",
+    " c "
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:weathered_copper_grate"
+  }
+}

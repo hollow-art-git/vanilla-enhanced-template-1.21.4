@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "i": "minecraft:iron_nugget"
+    "#": "minecraft:iron_nugget",
+    "x": "minecraft:hopper"
   },
   "pattern": [
-    "i i",
-    " i "
+    "#x#",
+    "###"
   ],
   "result": {
     "count": 1,
-    "id": "minecraft:bucket"
+    "id": "minecraft:hopper_minecart"
   }
 }
