@@ -4,7 +4,7 @@
   "group": "reinforced_stick",
   "key": {
     "/": "minecraft:stick",
-    "c": "minecraft:clay_ball"
+    "c": "minecraft:wheat"
   },
   "pattern": [
     "/c/"

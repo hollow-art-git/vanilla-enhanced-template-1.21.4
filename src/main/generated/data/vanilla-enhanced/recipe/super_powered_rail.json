@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "multi-bench",
+  "group": "super_powered_rail",
   "key": {
     "/": "minecraft:stick",
     "c": "vanilla-enhanced:copper_nugget",

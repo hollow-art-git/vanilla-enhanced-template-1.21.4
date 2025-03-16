@@ -32,6 +32,7 @@ public class ModItems {
 
     public static final Item SHARP_STONE = register("sharp_stone", Item::new, new Item.Settings());
     public static final Item REINFORCED_STICK = register("reinforced_stick", Item::new, new Item.Settings());
+    public static final Item EXPERT_HANDLE = register("expert_handle", Item::new, new Item.Settings());
     public static final Item COPPER_NUGGET = register("copper_nugget", Item::new, new Item.Settings());
 
 
@@ -40,7 +41,7 @@ public class ModItems {
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(VanillaEnhanced.MOD_ID, "item_group"));
 
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(ModBlocks.ECHO_BLOCK.asItem()))
+            .icon(() -> new ItemStack(ModItems.COPPER_NUGGET))
             .displayName(Text.translatable("itemGroup.vanilla-enhanced"))
             .build();
 
@@ -52,6 +53,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> {
             itemGroup.add(ModItems.SHARP_STONE);
             itemGroup.add(ModItems.REINFORCED_STICK);
+            itemGroup.add(ModItems.EXPERT_HANDLE);
             itemGroup.add(ModItems.COPPER_NUGGET);
 
         });
@@ -63,6 +65,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModItems.SHARP_STONE);
             itemGroup.add(ModItems.REINFORCED_STICK);
+            itemGroup.add(ModItems.EXPERT_HANDLE);
             itemGroup.add(ModItems.COPPER_NUGGET);
         });
     }

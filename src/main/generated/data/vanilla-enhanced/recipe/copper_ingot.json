@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "multi-bench",
+  "group": "copper_ingot",
   "key": {
     "c": "vanilla-enhanced:copper_nugget"
   },

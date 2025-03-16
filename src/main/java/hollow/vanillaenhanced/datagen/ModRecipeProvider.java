@@ -5,6 +5,7 @@ import java.util.concurrent.CompletableFuture;
 
 import hollow.vanillaenhanced.block.ModBlocks;
 import hollow.vanillaenhanced.item.ModItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
@@ -46,7 +47,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('c', ModItems.COPPER_NUGGET)
                         .input('/', Items.STICK)
                         .input('r', Items.REDSTONE)
-                        .group("multi-bench")
+                        .group("super_powered_rail")
                         .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                         .offerTo(exporter);
 
@@ -102,30 +103,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 createShapeless(RecipeCategory.MISC, Items.FLINT, 1)
                         .input(Items.GRAVEL, 2)
-                        .group("multi-bench")
-                        .criterion(hasItem(Items.GRAVEL), conditionsFromItem(Items.GRAVEL))
+                        .group("flint")
+                        .criterion(hasItem(Blocks.GRAVEL), conditionsFromItem(Blocks.GRAVEL))
                         .offerTo(exporter);
 
 
-                createShapeless(RecipeCategory.MISC, ModItems.SHARP_STONE, 2)
+                createShapeless(RecipeCategory.MISC, ModItems.SHARP_STONE, 1)
                         .input(Items.FLINT, 1)
                         .input(Items.COBBLESTONE, 1)
                         .group("sharp_stone")
-                        .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                        .criterion(hasItem(Blocks.COBBLESTONE), conditionsFromItem(Blocks.COBBLESTONE))
                         .offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.REINFORCED_STICK, 1)
                         .pattern("/c/")
-                        .input('c', Items.CLAY_BALL)
+                        .input('c', Items.WHEAT)
                         .input('/', Items.STICK)
                         .group("reinforced_stick")
                         .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                         .offerTo(exporter);
 
+                createShaped(RecipeCategory.MISC, ModItems.EXPERT_HANDLE, 1)
+                        .pattern(" g ")
+                        .pattern("g/g")
+                        .pattern(" g ")
+                        .input('g', Items.GOLD_NUGGET)
+                        .input('/', ModItems.REINFORCED_STICK)
+                        .group("expert_handle")
+                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.MISC, Items.COPPER_INGOT, 1)
                         .pattern("ccc")
                         .input('c', ModItems.COPPER_NUGGET)
-                        .group("multi-bench")
+                        .group("copper_ingot")
                         .criterion(hasItem(ModItems.COPPER_NUGGET), conditionsFromItem(ModItems.COPPER_NUGGET))
                         .offerTo(exporter);
 

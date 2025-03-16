@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": "vanilla-enhanced:reinforced_stick",
+    "#": "vanilla-enhanced:expert_handle",
     "X": "#minecraft:diamond_tool_materials"
   },
   "pattern": [
