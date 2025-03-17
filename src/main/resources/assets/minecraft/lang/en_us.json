@@ -12,9 +12,11 @@
   "advancements.husbandry.breed_an_animal.description": "Get two animals' attention with foodstuff and feed them so they breed together",
   "advancements.nether.charge_respawn_anchor.description": "Charge a Respawn Anchor to the maximum using Glowstone",
   "advancements.husbandry.plant_seed.description": "Plant a seed near a water source and watch it grow",
+  "advancements.husbandry.complete_catalogue.description": "Tame one of each Cat variant",
+  "advancements.husbandry.netherite_hoe.description": "Upgrade your Diamond Hoe to Netherite, and then reevaluate your life choices",
   "advancements.adventure.summon_iron_golem.description": "Summon an Iron Golem, using 4 Iron Blocks and a Carved Pumpkin, to help defend a village",
   "advancements.story.obtain_armor.title": "Stronger, Harder, Better",
-  "advancements.story.obtain_armor.description": "Get your hands on some iron armor. Quite the improvement.",
+  "advancements.story.obtain_armor.description": "Get your hands on some Iron armor. Quite the improvement.",
   "advancements.story.smelt_iron.title": "Acquire Hardware",
   "advancements.story.smelt_iron.description": "Smelt an Iron Piece"
 }

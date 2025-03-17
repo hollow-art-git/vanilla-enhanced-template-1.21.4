@@ -1,6 +1,76 @@
 {
   "parent": "minecraft:nether/obtain_ancient_debris",
   "criteria": {
+    "netherite_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "netherite_helmet": {
       "conditions": {
         "items": [
@@ -10,89 +80,18 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
-  "netherite_chestplate": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_chestplate"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-  "netherite_leggings": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_leggings"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-  "netherite_boots": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_boots"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-  "netherite_sword": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_sword"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-  "netherite_pickaxe": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_pickaxe"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-  "netherite_axe": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_axe"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-  "netherite_shovel": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_shovel"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-  "netherite_hoe": {
-    "conditions": {
-      "items": [
-        {
-          "items": "minecraft:netherite_hoe"
-        }
-      ]
-    },
-    "trigger": "minecraft:inventory_changed"
-  },
-
   "display": {
     "description": {
       "translate": "vanilla-enhanced:advancements.nether.first_netherite.description"
@@ -107,19 +106,16 @@
   },
   "requirements": [
     [
-      ["netherite_helmet"],
-      ["netherite_chestplate"],
-      ["netherite_leggings"],
-      ["netherite_boots"],
-      ["netherite_sword"],
-      ["netherite_pickaxe"],
-      ["netherite_axe"],
-      ["netherite_shovel"],
-      ["netherite_hoe"]
+      "netherite_helmet",
+      "netherite_chestplate",
+      "netherite_leggings",
+      "netherite_boots",
+      "netherite_hoe",
+      "netherite_shovel",
+      "netherite_axe",
+      "netherite_pickaxe",
+      "netherite_sword"
     ]
   ],
-  "rewards": {
-    "experience": 100
-  },
   "sends_telemetry_event": true
 }

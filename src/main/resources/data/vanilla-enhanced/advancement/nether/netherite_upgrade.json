@@ -19,7 +19,7 @@
     "frame": "goal",
     "icon": {
       "count": 1,
-      "id": "minecraft:netherite_upgrade"
+      "id": "minecraft:netherite_upgrade_smithing_template"
     },
     "title": {
       "translate": "vanilla-enhanced:advancements.nether.netherite_upgrade.title"
