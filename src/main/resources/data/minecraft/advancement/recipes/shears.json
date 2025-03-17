@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_ingot": {
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:compass"
+            "items": "minecraft:iron_nugget"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lodestone"
+        "recipe": "minecraft:shears"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherite_ingot"
+      "has_iron_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lodestone"
+      "minecraft:shears"
     ]
   }
 }

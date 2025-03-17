@@ -2,12 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": "minecraft:copper_ingot",
     "c": "vanilla-enhanced:copper_nugget"
   },
   "pattern": [
     "cc",
-    "c#",
+    "cc",
     "cc"
   ],
   "result": {

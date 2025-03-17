@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": "minecraft:stone",
-    "C": "minecraft:copper_ingot",
+    "C": "vanilla-enhanced:copper_nugget",
     "I": "minecraft:iron_ingot"
   },
   "pattern": [
