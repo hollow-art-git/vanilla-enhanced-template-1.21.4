@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:copper_nugget"
+            "items": "vanilla-enhanced:copper_nugget"
           }
         ]
       },

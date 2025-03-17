@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.7,
-  "group": "copper_ingot",
+  "group": "vanilla-enhanced:copper_nugget",
   "ingredient": "minecraft:raw_copper",
   "result": {
-    "id": "minecraft:copper_nugget"
+    "id": "vanilla-enhanced:copper_nugget"
   }
 }

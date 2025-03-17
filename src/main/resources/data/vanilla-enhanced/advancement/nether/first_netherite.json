@@ -107,15 +107,15 @@
   },
   "requirements": [
     [
-      "netherite_helmet",
-      "netherite_chestplate",
-      "netherite_leggings",
-      "netherite_boots",
-      "netherite_sword",
-      "netherite_pickaxe",
-      "netherite_axe",
-      "netherite_shovel",
-      "netherite_hoe"
+      ["netherite_helmet"],
+      ["netherite_chestplate"],
+      ["netherite_leggings"],
+      ["netherite_boots"],
+      ["netherite_sword"],
+      ["netherite_pickaxe"],
+      ["netherite_axe"],
+      ["netherite_shovel"],
+      ["netherite_hoe"]
     ]
   ],
   "rewards": {

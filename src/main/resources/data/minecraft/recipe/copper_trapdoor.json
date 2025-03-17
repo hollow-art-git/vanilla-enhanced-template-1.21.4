@@ -5,8 +5,8 @@
     "c": "vanilla-enhanced:copper_nugget"
   },
   "pattern": [
-    "###",
-    "###"
+    "ccc",
+    "ccc"
   ],
   "result": {
     "count": 2,

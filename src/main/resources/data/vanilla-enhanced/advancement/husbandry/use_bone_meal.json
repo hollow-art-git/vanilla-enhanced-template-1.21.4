@@ -134,7 +134,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "blocks": "minecraft:torchflower"
+                "blocks": "minecraft:torchflower_crop"
               }
             }
           },
@@ -155,7 +155,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "blocks": "minecraft:pitcher_pod"
+                "blocks": "minecraft:pitcher_crop"
               }
             }
           },
