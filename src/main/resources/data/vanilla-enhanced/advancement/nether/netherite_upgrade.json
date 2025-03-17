@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:nether/find_bastion",
+  "criteria": {
+    "obsidian": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_upgrade"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "vanilla-enhanced:advancements.nether.netherite_upgrade.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:netherite_upgrade"
+    },
+    "title": {
+      "translate": "vanilla-enhanced:advancements.nether.netherite_upgrade.title"
+    }
+  },
+  "requirements": [
+    [
+      "obsidian"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

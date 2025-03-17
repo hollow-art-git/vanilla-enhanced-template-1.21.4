@@ -18,6 +18,15 @@
   "vanilla-enhanced:advancements.story.iron_ingot.title":  "Novice Blacksmith",
   "vanilla-enhanced:advancements.story.iron_ingot.description":  "Turn some iron pieces into an iron ingot",
 
+  "vanilla-enhanced:advancements.nether.first_netherite.title": "Power Of The Debris",
+  "vanilla-enhanced:advancements.nether.first_netherite.description": "Upgrade any piece of Diamond gear in a Smithing Table using a Netherite Upgrade and a Netherite Ingot",
+
+  "vanilla-enhanced:advancements.nether.netherite_upgrade.title": "Born In Flames, I Have Been Blessed",
+  "vanilla-enhanced:advancements.nether.netherite_upgrade.description": "Find a Netherite Upgrade",
+
+  "vanilla-enhanced:advancements.adventure.all_paintings.title": "Magnum Opus",
+  "vanilla-enhanced:advancements.adventure.all_paintings.description": "---",
+
   "item.vanilla-enhanced.andesite_bricks": "Andesite Bricks",
   "item.vanilla-enhanced.andesite_bricks_slab": "Andesite Bricks Slab",
   "item.vanilla-enhanced.andesite_bricks_stairs": "Andesite Bricks Stairs",
