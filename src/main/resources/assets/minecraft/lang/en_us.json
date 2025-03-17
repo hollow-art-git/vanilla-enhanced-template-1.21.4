@@ -5,11 +5,13 @@
 
   "trim_material.minecraft.echo_shard": "Echo Material",
 
+  "tutorial.craft_planks.description": "You can find the recipe book in your inventory",
+
   "advancements.story.enter_the_nether.description": "Build a Nether Portal out of obsidian, light it with fire and enter the Nether",
   "advancements.nether.create_full_beacon.description": "Bring a Beacon to full power by placing it on top of a mineral block pyramid",
   "advancements.husbandry.breed_an_animal.description": "Get two animals' attention with foodstuff and feed them so they breed together",
   "advancements.nether.charge_respawn_anchor.description": "Charge a Respawn Anchor to the maximum using Glowstone",
-  "tutorial.craft_planks.description": "You can find the recipe book in your inventory",
+  "advancements.adventure.summon_iron_golem.description": "Summon an Iron Golem, using 4 Iron Blocks and a Carved Pumpkin, to help defend a village",
   "advancements.story.obtain_armor.title": "Stronger, Harder, Better",
   "advancements.story.obtain_armor.description": "Get your hands on some iron armor. Quite the improvement.",
   "advancements.story.smelt_iron.title": "Acquire Hardware",
