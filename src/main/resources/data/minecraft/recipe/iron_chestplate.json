@@ -3,12 +3,12 @@
   "category": "equipment",
   "key": {
     "X": "minecraft:iron_ingot",
-    "#": "minecraft:chainmail_chestplate"
+    "C": "minecraft:iron_nugget"
   },
   "pattern": [
-    " X ",
-    "X#X",
-    " X "
+    "X X",
+    "CXC",
+    "CCC"
   ],
   "result": {
     "count": 1,
