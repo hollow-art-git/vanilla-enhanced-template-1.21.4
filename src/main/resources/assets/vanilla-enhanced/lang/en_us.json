@@ -1,13 +1,13 @@
 {
   "itemGroup.vanilla-enhanced": "Vanilla Enhanced",
 
-  "item.vanilla-enhanced.super_powered_rail": "Super Powered Rail",
-  "item.vanilla-enhanced.echo_block": "Echo Block",
-
   "item.vanilla-enhanced.sharp_stone": "Sharp Stone",
   "item.vanilla-enhanced.reinforced_stick": "Thick Stick",
   "item.vanilla-enhanced.expert_handle": "Expert Handle",
   "item.vanilla-enhanced.copper_nugget": "Copper Piece",
+  "item.vanilla-enhanced.new_golden_pickaxe": "Golden Pickaxe",
+
+
 
   "vanilla-enhanced:advancements.story.crafting_table.title":  "Let's Get Crafting!",
   "vanilla-enhanced:advancements.story.crafting_table.description":  "Obtain your first Crafting Table. A whole new world of possibilities awaits you!",
@@ -19,19 +19,24 @@
   "vanilla-enhanced:advancements.story.iron_ingot.description":  "Turn some Iron Pieces into an Iron Ingot",
 
   "vanilla-enhanced:advancements.nether.first_netherite.title": "Power of the Debris",
-  "vanilla-enhanced:advancements.nether.first_netherite.description": "Upgrade any piece of Diamond gear in a Smithing Table using a Netherite Upgrade Template and a Netherite Ingot",
+  "vanilla-enhanced:advancements.nether.first_netherite.description": "Upgrade any piece of Diamond gear in a Smithing Table using a Netherite Upgrade and a Netherite Ingot",
 
   "vanilla-enhanced:advancements.nether.netherite_upgrade.title": "Born in Flames, I Have Been Blessed",
-  "vanilla-enhanced:advancements.nether.netherite_upgrade.description": "Find a Netherite Upgrade Smithing Template",
+  "vanilla-enhanced:advancements.nether.netherite_upgrade.description": "Find a Netherite Upgrade",
 
   "vanilla-enhanced:advancements.nether.use_bone_meal.title": "Watch It Grow",
   "vanilla-enhanced:advancements.nether.use_bone_meal.description": "Use some Bone Meal on crops to make them grow faster",
 
   "vanilla-enhanced:advancements.adventure.summon_snow_golem.title": "Chilly Help",
-  "vanilla-enhanced:advancements.adventure.summon_snow_golem.description": "Summon a Snow Golem, using 2 Snow Blocks and a Carved Pumpkin, to help defend an igloo",
+  "vanilla-enhanced:advancements.adventure.summon_snow_golem.description": "Summon a Snow Golem, using 2 Snow Blocks and a Carved Pumpkin, to.. hang out with them!",
 
   "vanilla-enhanced:advancements.adventure.all_paintings.title": "Magnum Opus",
   "vanilla-enhanced:advancements.adventure.all_paintings.description": "---",
+
+
+
+  "item.vanilla-enhanced.super_powered_rail": "Super Powered Rail",
+  "item.vanilla-enhanced.echo_block": "Echo Block",
 
   "item.vanilla-enhanced.andesite_bricks": "Andesite Bricks",
   "item.vanilla-enhanced.andesite_bricks_slab": "Andesite Bricks Slab",

@@ -1,6 +1,5 @@
 package hollow.vanillaenhanced.item;
 
-import hollow.vanillaenhanced.block.ModBlocks;
 import hollow.vanillaenhanced.VanillaEnhanced;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -9,6 +8,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -29,6 +30,20 @@ public class ModItems {
         return item;
     }
 
+    public static final ToolMaterial NEW_GOLD_TOOL_MATERIAL = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_IRON_TOOL,
+            64,
+            ToolMaterial.IRON.speed(),
+            1.2f,
+            ToolMaterial.GOLD.enchantmentValue(),
+            ItemTags.REPAIRS_GOLD_ARMOR
+    );
+
+    public static final Item NEW_GOLD_PICKAXE = register(
+            "new_golden_pickaxe",
+            settings -> new PickaxeItem(NEW_GOLD_TOOL_MATERIAL, 1f, 1f, settings),
+            new Item.Settings()
+    );
 
     public static final Item SHARP_STONE = register("sharp_stone", Item::new, new Item.Settings());
     public static final Item REINFORCED_STICK = register("reinforced_stick", Item::new, new Item.Settings());
@@ -50,6 +65,11 @@ public class ModItems {
 
         // --- STANDARD GROUPS ---
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register((itemGroup) -> {
+            itemGroup.add(ModItems.NEW_GOLD_PICKAXE);
+
+        });
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemGroup) -> {
             itemGroup.add(ModItems.SHARP_STONE);
             itemGroup.add(ModItems.REINFORCED_STICK);
@@ -67,6 +87,7 @@ public class ModItems {
             itemGroup.add(ModItems.REINFORCED_STICK);
             itemGroup.add(ModItems.EXPERT_HANDLE);
             itemGroup.add(ModItems.COPPER_NUGGET);
+            itemGroup.add(ModItems.NEW_GOLD_PICKAXE);
         });
     }
 }

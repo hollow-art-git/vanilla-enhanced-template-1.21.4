@@ -35,6 +35,32 @@
                   "condition": "minecraft:match_tool",
                   "predicate": {
                     "items": [
+                      "vanilla-enhanced:new_golden_pickaxe"
+                    ]
+                  }
+                }
+              ],
+
+              "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 6.0,
+                    "min": 3.0
+                  },
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "name": "minecraft:raw_copper"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
                       "minecraft:netherite_pickaxe"
                     ]
                   }

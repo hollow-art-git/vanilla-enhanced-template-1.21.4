@@ -49,7 +49,7 @@
                   "condition": "minecraft:match_tool",
                   "predicate": {
                     "items": [
-                      "minecraft:golden_pickaxe"
+                      "vanilla-enhanced:new_golden_pickaxe"
                     ]
                   }
                 }
