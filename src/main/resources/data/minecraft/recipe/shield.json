@@ -3,13 +3,13 @@
   "category": "equipment",
   "key": {
     "W": "#minecraft:wooden_tool_materials",
-    "O": "minecraft:iron_ingot",
-    "o": "minecraft:iron_nugget"
+    "o": "minecraft:iron_ingot",
+    "O": "minecraft:copper_block"
   },
   "pattern": [
     "OWO",
     "oWo",
-    " W "
+    "OWO"
   ],
   "result": {
     "count": 1,
