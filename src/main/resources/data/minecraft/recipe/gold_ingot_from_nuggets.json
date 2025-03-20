@@ -6,7 +6,6 @@
     "#": "minecraft:gold_nugget"
   },
   "pattern": [
-    "###",
     "###"
   ],
   "result": {

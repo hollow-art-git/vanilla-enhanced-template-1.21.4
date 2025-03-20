@@ -3,13 +3,12 @@
   "category": "equipment",
   "key": {
     "#": "minecraft:amethyst_shard",
-    "X": "minecraft:copper_ingot",
     "x": "vanilla-enhanced:copper_nugget"
   },
   "pattern": [
-    " # ",
-    " X ",
-    " x "
+    "#",
+    "x",
+    "x"
   ],
   "result": {
     "count": 1,

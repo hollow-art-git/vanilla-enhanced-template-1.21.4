@@ -6,7 +6,6 @@
     "#": "minecraft:iron_nugget"
   },
   "pattern": [
-    "###",
     "###"
   ],
   "result": {

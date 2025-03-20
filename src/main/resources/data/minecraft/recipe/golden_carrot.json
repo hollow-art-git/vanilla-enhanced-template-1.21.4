@@ -6,9 +6,9 @@
     "X": "minecraft:carrot"
   },
   "pattern": [
-    "###",
+    " # ",
     "#X#",
-    "###"
+    " # "
   ],
   "result": {
     "count": 1,

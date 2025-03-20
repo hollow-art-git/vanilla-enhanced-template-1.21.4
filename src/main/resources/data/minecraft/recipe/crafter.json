@@ -9,7 +9,7 @@
     "R": "minecraft:redstone"
   },
   "pattern": [
-    "###",
+    "x#x",
     "xCx",
     "RDR"
   ],
