@@ -1,12 +1,11 @@
-
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stick": {
+    "has_gravel": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_ingot"
+            "items": "minecraft:gravel"
           }
         ]
       },
@@ -14,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "vanilla-enhanced:copper_nugget_from_ingot"
+        "recipe": "vanilla-enhanced:flint"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -22,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stick"
+      "has_gravel"
     ]
   ],
   "rewards": {
     "recipes": [
-      "vanilla-enhanced:copper_nugget_from_ingot"
+      "vanilla-enhanced:flint"
     ]
   }
 }

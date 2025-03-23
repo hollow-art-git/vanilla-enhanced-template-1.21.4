@@ -5,11 +5,11 @@
     "#": "minecraft:iron_nugget"
   },
   "pattern": [
-    "##",
-    "##"
+    "###",
+    "###"
   ],
   "result": {
-    "count": 2,
+    "count": 4,
     "id": "minecraft:iron_trapdoor"
   }
 }

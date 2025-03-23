@@ -22,6 +22,8 @@ import net.minecraft.registry.tag.ItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
+import static net.minecraft.item.Items.HEART_OF_THE_SEA;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -101,13 +103,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_TERRACOTTA_SLAB, Ingredient.ofItem(Items.PINK_TERRACOTTA));
                 createStairsRecipe(ModBlocks.PINK_TERRACOTTA_STAIRS, Ingredient.ofItem(Items.PINK_TERRACOTTA));
 
-                createShapeless(RecipeCategory.MISC, Items.FLINT, 1)
-                        .input(Items.GRAVEL, 2)
-                        .group("flint")
-                        .criterion(hasItem(Blocks.GRAVEL), conditionsFromItem(Blocks.GRAVEL))
-                        .offerTo(exporter);
-
-
                 createShapeless(RecipeCategory.MISC, ModItems.SHARP_STONE, 1)
                         .input(Items.FLINT, 1)
                         .input(Items.COBBLESTONE, 1)
@@ -134,10 +129,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, Items.COPPER_INGOT, 1)
-                        .pattern("ccc")
+                        .pattern("cc")
+                        .pattern("cc")
                         .input('c', ModItems.COPPER_NUGGET)
                         .group("copper_ingot")
                         .criterion(hasItem(ModItems.COPPER_NUGGET), conditionsFromItem(ModItems.COPPER_NUGGET))
+                        .offerTo(exporter);
+
+
+                createShaped(RecipeCategory.MISC, ModItems.COPPER_NUGGET, 4)
+                        .pattern("c")
+                        .input('c', Items.COPPER_INGOT)
+                        .group("copper_nugget")
+                        .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                         .offerTo(exporter);
 
 
@@ -152,7 +156,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerSmelting(List.of(Items.RAW_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.COPPER_BLOCK, 0.1f, 200, "raw_copper_block");
                 offerSmelting(List.of(Items.RAW_GOLD_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.GOLD_BLOCK, 0.1f, 200, "raw_gold_block");
                 offerBlasting(List.of(Items.RAW_IRON_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.IRON_BLOCK, 0.1f, 200, "raw_iron_block");
-                offerBlasting(List.of(Items.RAW_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.COPPER_BLOCK, 0.1f, 200, "raw_");
+                offerBlasting(List.of(Items.RAW_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.COPPER_BLOCK, 0.1f, 200, "raw_copper_block");
                 offerBlasting(List.of(Items.RAW_GOLD_BLOCK), RecipeCategory.BUILDING_BLOCKS, Items.GOLD_BLOCK, 0.1f, 200, "raw_gold_block");
 
 
