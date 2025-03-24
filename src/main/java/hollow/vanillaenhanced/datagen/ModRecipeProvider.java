@@ -136,12 +136,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.COPPER_NUGGET), conditionsFromItem(ModItems.COPPER_NUGGET))
                         .offerTo(exporter);
 
-
                 createShaped(RecipeCategory.MISC, ModItems.COPPER_NUGGET, 4)
                         .pattern("c")
                         .input('c', Items.COPPER_INGOT)
                         .group("copper_nugget")
                         .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.DIAMOND, 1)
+                        .pattern("da")
+                        .pattern("ad")
+                        .input('d', ModItems.DIAMOND_SHARD)
+                        .input('a', Items.AMETHYST_SHARD)
+                        .group("diamond")
+                        .criterion(hasItem(ModItems.DIAMOND_SHARD), conditionsFromItem(ModItems.DIAMOND_SHARD))
+                        .offerTo(exporter);
+
+
+                createShapeless(RecipeCategory.MISC, ModItems.DIAMOND_SHARD, 2)
+                        .input(Items.DIAMOND, 1)
+                        .group("diamond_shard")
+                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                         .offerTo(exporter);
 
 

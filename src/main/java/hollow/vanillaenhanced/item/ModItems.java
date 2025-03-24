@@ -49,6 +49,7 @@ public class ModItems {
     public static final Item REINFORCED_STICK = register("reinforced_stick", Item::new, new Item.Settings());
     public static final Item EXPERT_HANDLE = register("expert_handle", Item::new, new Item.Settings());
     public static final Item COPPER_NUGGET = register("copper_nugget", Item::new, new Item.Settings());
+    public static final Item DIAMOND_SHARD = register("diamond_shard", Item::new, new Item.Settings());
 
 
     // --- CUSTOM GROUP ---
@@ -56,7 +57,7 @@ public class ModItems {
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(VanillaEnhanced.MOD_ID, "item_group"));
 
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(ModItems.COPPER_NUGGET))
+            .icon(() -> new ItemStack(ModItems.DIAMOND_SHARD))
             .displayName(Text.translatable("itemGroup.vanilla-enhanced"))
             .build();
 
@@ -75,6 +76,7 @@ public class ModItems {
             itemGroup.add(ModItems.REINFORCED_STICK);
             itemGroup.add(ModItems.EXPERT_HANDLE);
             itemGroup.add(ModItems.COPPER_NUGGET);
+            itemGroup.add(ModItems.DIAMOND_SHARD);
 
         });
 
@@ -87,6 +89,7 @@ public class ModItems {
             itemGroup.add(ModItems.REINFORCED_STICK);
             itemGroup.add(ModItems.EXPERT_HANDLE);
             itemGroup.add(ModItems.COPPER_NUGGET);
+            itemGroup.add(ModItems.DIAMOND_SHARD);
             itemGroup.add(ModItems.NEW_GOLD_PICKAXE);
         });
     }

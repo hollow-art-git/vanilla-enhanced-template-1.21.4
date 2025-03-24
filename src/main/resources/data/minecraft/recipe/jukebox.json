@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "copper_ingot",
   "key": {
-    "c": "vanilla-enhanced:copper_nugget"
+    "#": "#minecraft:planks",
+    "X": "vanilla-enhanced:diamond_shard"
   },
   "pattern": [
-    "cc",
-    "cc"
+    "###",
+    "#X#",
+    "###"
   ],
   "result": {
     "count": 1,
-    "id": "minecraft:copper_ingot"
+    "id": "minecraft:jukebox"
   }
 }

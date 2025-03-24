@@ -25,6 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REINFORCED_STICK, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EXPERT_HANDLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_SHARD, Models.GENERATED);
 
     }
 
