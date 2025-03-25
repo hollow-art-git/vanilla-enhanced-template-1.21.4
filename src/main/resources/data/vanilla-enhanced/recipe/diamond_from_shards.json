@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "diamond",
   "key": {
-    "a": "minecraft:amethyst_shard",
-    "d": "vanilla-enhanced:diamond_shard"
+    "d": "vanilla-enhanced:diamond_shard",
+    "a": "minecraft:amethyst_shard"
   },
   "pattern": [
     "da",
@@ -13,5 +12,7 @@
   "result": {
     "count": 1,
     "id": "minecraft:diamond"
-  }
+  },
+
+  "group": "diamond"
 }

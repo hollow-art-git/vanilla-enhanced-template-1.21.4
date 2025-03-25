@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "elder_guardian_horn",
+  "key": {
+    "g": "vanilla-enhanced:guardian_horn",
+    "p": "minecraft:prismarine_shard"
+  },
+  "pattern": [
+    "gpg",
+    "pgp",
+    "gpg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-enhanced:elder_guardian_horn"
+  }
+}

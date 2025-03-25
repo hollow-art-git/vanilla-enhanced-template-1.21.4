@@ -143,20 +143,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                         .offerTo(exporter);
 
-                createShaped(RecipeCategory.MISC, Items.DIAMOND, 1)
-                        .pattern("da")
-                        .pattern("ad")
-                        .input('d', ModItems.DIAMOND_SHARD)
-                        .input('a', Items.AMETHYST_SHARD)
-                        .group("diamond")
-                        .criterion(hasItem(ModItems.DIAMOND_SHARD), conditionsFromItem(ModItems.DIAMOND_SHARD))
-                        .offerTo(exporter);
-
-
                 createShapeless(RecipeCategory.MISC, ModItems.DIAMOND_SHARD, 2)
                         .input(Items.DIAMOND, 1)
                         .group("diamond_shard")
                         .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.ELDER_GUARDIAN_HORN, 1)
+                        .pattern("gpg")
+                        .pattern("pgp")
+                        .pattern("gpg")
+                        .input('g', ModItems.GUARDIAN_HORN)
+                        .input('p', Items.PRISMARINE_SHARD)
+                        .group("elder_guardian_horn")
+                        .criterion(hasItem(ModItems.GUARDIAN_HORN), conditionsFromItem(ModItems.GUARDIAN_HORN))
                         .offerTo(exporter);
 
 

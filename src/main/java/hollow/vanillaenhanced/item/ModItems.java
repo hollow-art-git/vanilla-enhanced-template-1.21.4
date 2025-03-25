@@ -50,6 +50,8 @@ public class ModItems {
     public static final Item EXPERT_HANDLE = register("expert_handle", Item::new, new Item.Settings());
     public static final Item COPPER_NUGGET = register("copper_nugget", Item::new, new Item.Settings());
     public static final Item DIAMOND_SHARD = register("diamond_shard", Item::new, new Item.Settings());
+    public static final Item GUARDIAN_HORN = register("guardian_horn", Item::new, new Item.Settings());
+    public static final Item ELDER_GUARDIAN_HORN = register("elder_guardian_horn", Item::new, new Item.Settings());
 
 
     // --- CUSTOM GROUP ---
@@ -77,6 +79,8 @@ public class ModItems {
             itemGroup.add(ModItems.EXPERT_HANDLE);
             itemGroup.add(ModItems.COPPER_NUGGET);
             itemGroup.add(ModItems.DIAMOND_SHARD);
+            itemGroup.add(ModItems.GUARDIAN_HORN);
+            itemGroup.add(ModItems.ELDER_GUARDIAN_HORN);
 
         });
 
@@ -90,6 +94,8 @@ public class ModItems {
             itemGroup.add(ModItems.EXPERT_HANDLE);
             itemGroup.add(ModItems.COPPER_NUGGET);
             itemGroup.add(ModItems.DIAMOND_SHARD);
+            itemGroup.add(ModItems.GUARDIAN_HORN);
+            itemGroup.add(ModItems.ELDER_GUARDIAN_HORN);
             itemGroup.add(ModItems.NEW_GOLD_PICKAXE);
         });
     }

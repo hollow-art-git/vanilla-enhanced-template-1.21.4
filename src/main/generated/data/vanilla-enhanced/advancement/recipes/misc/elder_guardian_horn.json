@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_guardian_horn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla-enhanced:guardian_horn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vanilla-enhanced:elder_guardian_horn"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_guardian_horn"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vanilla-enhanced:elder_guardian_horn"
+    ]
+  }
+}
