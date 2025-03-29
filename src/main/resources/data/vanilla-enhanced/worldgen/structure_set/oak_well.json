@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "vanilla-enhanced:oak_well",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 15,
+    "salt": 0
+  }
+}
