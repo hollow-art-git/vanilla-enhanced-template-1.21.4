@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "/": "minecraft:stick",
+    "g": "minecraft:gold_nugget",
+    "s": "minecraft:stone"
+  },
+  "pattern": [
+    "///",
+    "sgs",
+    "s s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bell"
+  },
+
+  "group": "bell"
+}
