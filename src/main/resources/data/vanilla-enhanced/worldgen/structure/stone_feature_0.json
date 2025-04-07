@@ -13,7 +13,6 @@
     "minecraft:sparse_jungle",
     "minecraft:plains",
     "minecraft:sunflower_plains",
-    "minecraft:snowy_plains",
     "minecraft:wooded_badlands"
   ],
   "step": "surface_structures",
