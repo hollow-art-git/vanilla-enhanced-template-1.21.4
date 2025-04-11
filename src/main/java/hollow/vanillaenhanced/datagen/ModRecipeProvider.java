@@ -68,6 +68,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createStairsRecipe(ModBlocks.DIORITE_BRICKS_STAIRS, Ingredient.ofItem(Items.DIORITE));
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_STAIRS,Items.DIORITE);
 
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_SLAB, Ingredient.ofItem(ModBlocks.PALM_PLANKS));
+                createStairsRecipe(ModBlocks.PALM_STAIRS, Ingredient.ofItem(ModBlocks.PALM_PLANKS));
+
                 createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_SLAB, Ingredient.ofItem(Items.TERRACOTTA));
                 createStairsRecipe(ModBlocks.TERRACOTTA_STAIRS, Ingredient.ofItem(Items.TERRACOTTA));
                 createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_TERRACOTTA_SLAB, Ingredient.ofItem(Items.WHITE_TERRACOTTA));

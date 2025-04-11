@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "vanilla-enhanced:block/chiseled_diorite_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "vanilla-enhanced:block/chiseled_diorite"
+    },
+    "axis=z": {
+      "model": "vanilla-enhanced:block/chiseled_diorite_horizontal",
+      "x": 90
+    }
+  }
+}

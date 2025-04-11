@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "vanilla-enhanced:block/palm_planks"
+  }
+}

@@ -1,6 +1,7 @@
 package hollow.vanillaenhanced.datagen;
 
 import hollow.vanillaenhanced.block.ModBlocks;
+import hollow.vanillaenhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -33,6 +34,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DIORITE_BRICKS_STAIRS);
         addDrop(ModBlocks.DIORITE_BRICKS_WALL);
         addDrop(ModBlocks.CHISELED_DIORITE);
+
+        addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_LOG, 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F));
+        addDrop(ModBlocks.PALM_LOG);
+        addDrop(ModBlocks.PALM_WOOD);
+        addDrop(ModBlocks.PALM_PLANKS);
+        addDrop(ModBlocks.PALM_FENCE);
+        //addDrop(ModBlocks.PALM_FENCE_GATE);
 
         addDrop(ModBlocks.TERRACOTTA_SLAB);
         addDrop(ModBlocks.TERRACOTTA_STAIRS);

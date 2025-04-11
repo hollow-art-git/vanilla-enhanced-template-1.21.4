@@ -15,7 +15,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 
 public class ModBlocks {
 
@@ -71,7 +73,7 @@ public class ModBlocks {
 
     public static final RegistryKey<Block> CHISELED_DIORITE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "chiseled_diorite"));
     public static final Block CHISELED_DIORITE = register(
-            new Block(AbstractBlock.Settings.create().registryKey(CHISELED_DIORITE_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)), CHISELED_DIORITE_KEY, true);
+            new PillarBlock(AbstractBlock.Settings.create().registryKey(CHISELED_DIORITE_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)), CHISELED_DIORITE_KEY, true);
 
     // --- GRANITE ---
     public static final RegistryKey<Block> GRANITE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "granite_bricks"));
@@ -129,8 +131,50 @@ public class ModBlocks {
     public static final Block CHISELED_ANDESITE = register(
             new Block(AbstractBlock.Settings.create().registryKey(CHISELED_ANDESITE_KEY).sounds(BlockSoundGroup.STONE).requiresTool().resistance(6).hardness(1.5f)), CHISELED_ANDESITE_KEY, true);
 
-    // --- TERRACOTTA / CONCRETE ---
+    // --- PALM TREE ---
 
+
+    public static final RegistryKey<Block> PALM_LEAVES_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_leaves"));
+    public static final Block PALM_LEAVES = register(
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).registryKey(PALM_LEAVES_KEY).nonOpaque()), PALM_LEAVES_KEY, true);
+
+    public static final RegistryKey<Block> PALM_PLANKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_planks"));
+    public static final Block PALM_PLANKS = register(
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).registryKey(PALM_PLANKS_KEY)), PALM_PLANKS_KEY, true);
+
+    public static final RegistryKey<Block> PALM_LOG_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_log"));
+    public static final Block PALM_LOG = register(
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).registryKey(PALM_LOG_KEY)), PALM_LOG_KEY, true);
+
+    public static final RegistryKey<Block> PALM_WOOD_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_wood"));
+    public static final Block PALM_WOOD = register(
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).registryKey(PALM_WOOD_KEY)), PALM_WOOD_KEY, true);
+
+    public static final RegistryKey<Block> PALM_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_slab"));
+    public static final Block PALM_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).registryKey(PALM_SLAB_KEY)), PALM_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> PALM_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_stairs"));
+    public static final Block PALM_STAIRS = register(
+            new StairsBlock(ModBlocks.PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).registryKey(PALM_STAIRS_KEY)), PALM_STAIRS_KEY, true);
+
+    public static final RegistryKey<Block> PALM_FENCE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_fence"));
+    public static final Block PALM_FENCE = register(
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE).registryKey(PALM_FENCE_KEY)), PALM_FENCE_KEY, true);
+
+    /*
+    public static final RegistryKey<Block> PALM_FENCE_GATE_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_fence_gate"));
+    public static final Block PALM_FENCE_GATE = register(
+            new FenceGateBlock(ModBlocks.PALM_PLANKS, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).registryKey(PALM_FENCE_GATE_KEY)), PALM_FENCE_GATE_KEY, true);
+    */
+    public static final BlockFamily PALM_FAMILY =
+            new BlockFamily.Builder(ModBlocks.PALM_PLANKS)
+                    .stairs(ModBlocks.PALM_STAIRS)
+                    .slab(ModBlocks.PALM_SLAB)
+                    .fence(ModBlocks.PALM_FENCE)
+                    .build();
+
+    // --- TERRACOTTA / CONCRETE ---
 
     // --- MAIN ---
 
@@ -639,7 +683,17 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register((itemGroup) -> {
             itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> {
+            itemGroup.add(ModBlocks.PALM_LEAVES.asItem());
+            itemGroup.add(ModBlocks.PALM_LOG.asItem());
+            itemGroup.add(ModBlocks.PALM_WOOD.asItem());
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
+
+            itemGroup.add(ModBlocks.PALM_PLANKS.asItem());
+            itemGroup.add(ModBlocks.PALM_SLAB.asItem());
+            itemGroup.add(ModBlocks.PALM_STAIRS.asItem());
+            itemGroup.add(ModBlocks.PALM_FENCE.asItem());
 
             itemGroup.add(ModBlocks.ECHO_BLOCK.asItem());
 
@@ -737,6 +791,14 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.ECHO_BLOCK.asItem());
 
             itemGroup.add(ModBlocks.SUPER_POWERED_RAIL.asItem());
+
+            itemGroup.add(ModBlocks.PALM_LEAVES.asItem());
+            itemGroup.add(ModBlocks.PALM_LOG.asItem());
+            itemGroup.add(ModBlocks.PALM_WOOD.asItem());
+            itemGroup.add(ModBlocks.PALM_PLANKS.asItem());
+            itemGroup.add(ModBlocks.PALM_SLAB.asItem());
+            itemGroup.add(ModBlocks.PALM_STAIRS.asItem());
+            itemGroup.add(ModBlocks.PALM_FENCE.asItem());
 
             itemGroup.add(ModBlocks.ANDESITE_BRICKS.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_SLAB.asItem());

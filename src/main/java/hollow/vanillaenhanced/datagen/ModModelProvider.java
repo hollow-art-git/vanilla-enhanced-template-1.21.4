@@ -36,6 +36,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ECHO_BLOCK);
         blockStateModelGenerator.registerStraightRail(ModBlocks.SUPER_POWERED_RAIL);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_LEAVES);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS).family(ModBlocks.PALM_FAMILY);
+        blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ANDESITE_BRICKS).family(ModBlocks.ANDESITE_FAMILY);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_ANDESITE);
 
@@ -43,7 +47,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_GRANITE);
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DIORITE_BRICKS).family(ModBlocks.DIORITE_FAMILY);
-        blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_DIORITE, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.TERRACOTTA).family(ModBlocks.TERRACOTTA_FAMILY);
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_TERRACOTTA).family(ModBlocks.RED_TERRACOTTA_FAMILY);
