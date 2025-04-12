@@ -2,6 +2,7 @@ package hollow.vanillaenhanced.block;
 
 import hollow.vanillaenhanced.VanillaEnhanced;
 import hollow.vanillaenhanced.item.ModItems;
+import hollow.vanillaenhanced.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.data.family.BlockFamilies;
@@ -146,9 +147,21 @@ public class ModBlocks {
     public static final Block PALM_LOG = register(
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).registryKey(PALM_LOG_KEY)), PALM_LOG_KEY, true);
 
+    public static final RegistryKey<Block> STRIPPED_PALM_LOG_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "stripped_palm_log"));
+    public static final Block STRIPPED_PALM_LOG = register(
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG).registryKey(STRIPPED_PALM_LOG_KEY)), STRIPPED_PALM_LOG_KEY, true);
+
     public static final RegistryKey<Block> PALM_WOOD_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_wood"));
     public static final Block PALM_WOOD = register(
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).registryKey(PALM_WOOD_KEY)), PALM_WOOD_KEY, true);
+
+    public static final RegistryKey<Block> STRIPPED_PALM_WOOD_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "stripped_palm_wood"));
+    public static final Block STRIPPED_PALM_WOOD = register(
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD).registryKey(STRIPPED_PALM_WOOD_KEY)), STRIPPED_PALM_WOOD_KEY, true);
+
+    public static final RegistryKey<Block> PALM_SAPLING_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_sapling"));
+    public static final Block PALM_SAPLING = register(
+            new SaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING).registryKey(PALM_SAPLING_KEY)), PALM_SAPLING_KEY, true);
 
     public static final RegistryKey<Block> PALM_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "palm_slab"));
     public static final Block PALM_SLAB = register(
@@ -167,6 +180,7 @@ public class ModBlocks {
     public static final Block PALM_FENCE_GATE = register(
             new FenceGateBlock(ModBlocks.PALM_PLANKS, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).registryKey(PALM_FENCE_GATE_KEY)), PALM_FENCE_GATE_KEY, true);
     */
+
     public static final BlockFamily PALM_FAMILY =
             new BlockFamily.Builder(ModBlocks.PALM_PLANKS)
                     .stairs(ModBlocks.PALM_STAIRS)
@@ -686,7 +700,10 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemGroup) -> {
             itemGroup.add(ModBlocks.PALM_LEAVES.asItem());
             itemGroup.add(ModBlocks.PALM_LOG.asItem());
+            itemGroup.add(ModBlocks.STRIPPED_PALM_LOG.asItem());
             itemGroup.add(ModBlocks.PALM_WOOD.asItem());
+            itemGroup.add(ModBlocks.STRIPPED_PALM_WOOD.asItem());
+            itemGroup.add(ModBlocks.PALM_SAPLING.asItem());
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
 
@@ -794,11 +811,14 @@ public class ModBlocks {
 
             itemGroup.add(ModBlocks.PALM_LEAVES.asItem());
             itemGroup.add(ModBlocks.PALM_LOG.asItem());
+            itemGroup.add(ModBlocks.STRIPPED_PALM_LOG.asItem());
             itemGroup.add(ModBlocks.PALM_WOOD.asItem());
+            itemGroup.add(ModBlocks.STRIPPED_PALM_WOOD.asItem());
             itemGroup.add(ModBlocks.PALM_PLANKS.asItem());
             itemGroup.add(ModBlocks.PALM_SLAB.asItem());
             itemGroup.add(ModBlocks.PALM_STAIRS.asItem());
             itemGroup.add(ModBlocks.PALM_FENCE.asItem());
+            itemGroup.add(ModBlocks.PALM_SAPLING.asItem());
 
             itemGroup.add(ModBlocks.ANDESITE_BRICKS.asItem());
             itemGroup.add(ModBlocks.ANDESITE_BRICKS_SLAB.asItem());

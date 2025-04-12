@@ -35,9 +35,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DIORITE_BRICKS_WALL);
         addDrop(ModBlocks.CHISELED_DIORITE);
 
-        addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_LOG, 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F));
+        addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, 0.00625F));
         addDrop(ModBlocks.PALM_LOG);
         addDrop(ModBlocks.PALM_WOOD);
+        addDrop(ModBlocks.STRIPPED_PALM_LOG);
+        addDrop(ModBlocks.STRIPPED_PALM_WOOD);
+        addDrop(ModBlocks.PALM_SAPLING);
         addDrop(ModBlocks.PALM_PLANKS);
         addDrop(ModBlocks.PALM_FENCE);
         //addDrop(ModBlocks.PALM_FENCE_GATE);

@@ -29,6 +29,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GUARDIAN_HORN, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELDER_GUARDIAN_HORN, Models.GENERATED);
 
+        //itemModelGenerator.register(ModBlocks.PALM_SAPLING.asItem(), Models.GENERATED);
+
     }
 
     @Override
@@ -39,6 +41,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_LEAVES);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS).family(ModBlocks.PALM_FAMILY);
         blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.PALM_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ANDESITE_BRICKS).family(ModBlocks.ANDESITE_FAMILY);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_ANDESITE);

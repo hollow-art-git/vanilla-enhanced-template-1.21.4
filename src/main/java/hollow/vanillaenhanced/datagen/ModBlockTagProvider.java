@@ -129,10 +129,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SUPER_POWERED_RAIL);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlocks.PALM_LOG);
-
-        getOrCreateTagBuilder(BlockTags.LOGS)
-                .add(ModBlocks.PALM_LOG);
+                .add(ModBlocks.PALM_LOG)
+                .add(ModBlocks.PALM_WOOD)
+                .add(ModBlocks.STRIPPED_PALM_LOG)
+                .add(ModBlocks.STRIPPED_PALM_WOOD);
 
     }
 }

@@ -1,6 +1,5 @@
 // 1.21.4	-999999999-01-01T00:00:00	Vanilla Enhanced/Tags for minecraft:block
-1b72ebcf064875877576eaf48709e8bcdf16c3a7 data/minecraft/tags/block/logs.json
-1b72ebcf064875877576eaf48709e8bcdf16c3a7 data/minecraft/tags/block/logs_that_burn.json
+555b1d4718c166f0519ec6b67cf2811b60be5995 data/minecraft/tags/block/logs_that_burn.json
 0333944e0389164f96d3b06f13aa5d13cb5ffc38 data/minecraft/tags/block/mineable/axe.json
 dc3aba8b0fd0921a7095c326003fa8043cc41de6 data/minecraft/tags/block/mineable/pickaxe.json
 2dc4b1b8f2c81ef01c49a512e979a96e3d5ba036 data/minecraft/tags/block/rails.json
