@@ -53,6 +53,237 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                         .offerTo(exporter);
 
+                createShaped(RecipeCategory.MISC, Items.ANGLER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.ANGLER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.ANGLER_POTTERY_SHERD), conditionsFromItem(Items.ANGLER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.ARCHER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.ARCHER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.ARCHER_POTTERY_SHERD), conditionsFromItem(Items.ARCHER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.ARMS_UP_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.ARMS_UP_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.ARMS_UP_POTTERY_SHERD), conditionsFromItem(Items.ARMS_UP_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.BLADE_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.BLADE_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.BLADE_POTTERY_SHERD), conditionsFromItem(Items.BLADE_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.BREWER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.BREWER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.BREWER_POTTERY_SHERD), conditionsFromItem(Items.BREWER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.BURN_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.BURN_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.BURN_POTTERY_SHERD), conditionsFromItem(Items.BURN_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.DANGER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.DANGER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.DANGER_POTTERY_SHERD), conditionsFromItem(Items.DANGER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.EXPLORER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.EXPLORER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.EXPLORER_POTTERY_SHERD), conditionsFromItem(Items.EXPLORER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.FLOW_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.FLOW_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.FLOW_POTTERY_SHERD), conditionsFromItem(Items.FLOW_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.FRIEND_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.FRIEND_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.FRIEND_POTTERY_SHERD), conditionsFromItem(Items.FRIEND_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.GUSTER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.GUSTER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.GUSTER_POTTERY_SHERD), conditionsFromItem(Items.GUSTER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.HEART_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.HEART_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.HEART_POTTERY_SHERD), conditionsFromItem(Items.HEART_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.HEARTBREAK_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.HEARTBREAK_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.HEARTBREAK_POTTERY_SHERD), conditionsFromItem(Items.HEARTBREAK_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.HOWL_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.HOWL_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.HOWL_POTTERY_SHERD), conditionsFromItem(Items.HOWL_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.MINER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.MINER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.MINER_POTTERY_SHERD), conditionsFromItem(Items.MINER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.MOURNER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.MOURNER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.MOURNER_POTTERY_SHERD), conditionsFromItem(Items.MOURNER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.PRIZE_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.PRIZE_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.PRIZE_POTTERY_SHERD), conditionsFromItem(Items.PRIZE_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.SCRAPE_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.SCRAPE_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.SCRAPE_POTTERY_SHERD), conditionsFromItem(Items.SCRAPE_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.PLENTY_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.PLENTY_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.PLENTY_POTTERY_SHERD), conditionsFromItem(Items.PLENTY_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.SHEAF_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.SHEAF_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.SHEAF_POTTERY_SHERD), conditionsFromItem(Items.SHEAF_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.SHELTER_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.SHELTER_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.SHELTER_POTTERY_SHERD), conditionsFromItem(Items.SHELTER_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.SNORT_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.SNORT_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.SNORT_POTTERY_SHERD), conditionsFromItem(Items.SNORT_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Items.SKULL_POTTERY_SHERD, 5)
+                        .pattern(" X ")
+                        .pattern("XbX")
+                        .pattern(" X ")
+                        .input('b', Items.BRICK)
+                        .input('X', Items.SKULL_POTTERY_SHERD)
+                        .group("pottery_sherd")
+                        .criterion(hasItem(Items.SKULL_POTTERY_SHERD), conditionsFromItem(Items.SKULL_POTTERY_SHERD))
+                        .offerTo(exporter);
+
+
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_ANDESITE, Items.ANDESITE_SLAB);
                 createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICKS_SLAB, Ingredient.ofItem(Items.ANDESITE));
                 createStairsRecipe(ModBlocks.ANDESITE_BRICKS_STAIRS, Ingredient.ofItem(Items.ANDESITE));

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pottery_sherd",
+  "key": {
+    "X": "minecraft:sheaf_pottery_sherd",
+    "b": "minecraft:brick"
+  },
+  "pattern": [
+    " X ",
+    "XbX",
+    " X "
+  ],
+  "result": {
+    "count": 5,
+    "id": "minecraft:sheaf_pottery_sherd"
+  }
+}
