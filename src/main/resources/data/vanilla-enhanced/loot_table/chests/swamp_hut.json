@@ -11,6 +11,22 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:milk_bucket",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
                 "max": 7.0,
                 "min": 4.0
               },
@@ -18,7 +34,7 @@
             }
           ],
           "name": "minecraft:slime_ball",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -43,8 +59,24 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 3.0
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:glass_bottle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -98,7 +130,7 @@
             }
           ],
           "name": "minecraft:spider_eye",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -107,8 +139,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 3.0
+                "max": 5.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -123,8 +155,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 3.0
+                "max": 5.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -133,7 +165,7 @@
           "weight": 4
         }
       ],
-      "rolls": 5.0
+      "rolls": 6.0
     }
   ],
   "random_sequence": "minecraft:chests/shipwreck_supply"
