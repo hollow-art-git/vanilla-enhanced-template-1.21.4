@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:saddle",
+          "name": "minecraft:lead",
           "weight": 20
         },
         {
@@ -21,13 +21,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_ward",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_blocks",
-          "weight": 15
+          "name": "minecraft:music_disc_mellohi",
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -36,17 +31,17 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_horse_armor",
+          "name": "minecraft:chainmail_chestplate",
           "weight": 10
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_horse_armor",
+          "name": "minecraft:diamond_hoe",
           "weight": 15
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_horse_armor",
+          "name": "minecraft:diamond_chestplate",
           "weight": 5
         },
         {
@@ -207,6 +202,22 @@
           ],
           "name": "minecraft:beetroot_seeds",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:resin_clump",
+          "weight": 50
         }
       ],
       "rolls": {
@@ -284,7 +295,20 @@
         }
       ],
       "rolls": 3.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:vex_armor_trim_smithing_template"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:chests/simple_dungeon"
+  "random_sequence": "minecraft:chests/woodland_mansion"
 }

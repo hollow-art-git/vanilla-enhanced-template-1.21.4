@@ -21,10 +21,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_otherside"
-        },
-        {
-          "type": "minecraft:item",
           "functions": [
             {
               "add": false,
@@ -124,12 +120,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_13",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_11",
+          "name": "minecraft:music_disc_otherside",
           "weight": 2
         },
         {
