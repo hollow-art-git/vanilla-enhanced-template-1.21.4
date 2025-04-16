@@ -4,6 +4,7 @@
     "minecraft:desert"
   ],
   "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
   "spawn_overrides": {},
   "start_pool": "vanilla-enhanced:desert_pyramid",
   "size": 1,

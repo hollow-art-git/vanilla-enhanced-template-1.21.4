@@ -12,7 +12,7 @@
   "spawn_overrides": {},
   "start_pool": "vanilla-enhanced:oak_well",
   "size": 1,
-  "project_start_to_heightmap": "WORLD_SURFACE",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "start_height": {
     "absolute": 0
   },

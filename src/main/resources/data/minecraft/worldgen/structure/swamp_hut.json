@@ -1,6 +1,7 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": "#minecraft:has_structure/swamp_hut",
+  "terrain_adaptation": "beard_thin",
   "step": "surface_structures",
   "spawn_overrides": {
     "creature": {
