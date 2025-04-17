@@ -7,11 +7,10 @@
 			"id": "head",
 			"invertAxis": "xy",
 			"translate": [0, -9, 4],
-			"texture": "textures/entity/chicken.png",
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
-				{"coordinates": [-2, 9, -6, 4, 6, 3], "textureOffset": [0, 0]},
-				{"coordinates": [0, 13, -7, 0, 4, 4], "textureOffset": [45, 13]}
+				{"coordinates": [-1.5, 9, -6, 3, 4, 3], "textureOffset": [8, 25]}
 			]
 		},
 		{
@@ -19,10 +18,10 @@
 			"id": "bill",
 			"invertAxis": "xy",
 			"translate": [0, -9, 4],
-			"texture": "textures/entity/chicken.png",
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
-				{"coordinates": [-1, 11, -8, 2, 2, 2], "textureOffset": [16, 0]}
+				{"coordinates": [-1, 10, -8, 2, 2, 2], "textureOffset": [0, 28]}
 			]
 		},
 		{
@@ -30,10 +29,10 @@
 			"id": "chin",
 			"invertAxis": "xy",
 			"translate": [0, -9, 4],
-			"texture": "textures/entity/chicken.png",
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
-				{"coordinates": [-1, 10, -7, 2, 1, 1], "textureOffset": [15, 5]}
+				{"coordinates": [-1, 9, -7, 2, 2, 2], "textureOffset": [23, 6]}
 			]
 		},
 		{
@@ -42,11 +41,10 @@
 			"invertAxis": "xy",
 			"translate": [0, -8, 0],
 			"rotate": [-90, 0, 0],
-			"texture": "textures/entity/chicken.png",
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
-				{"coordinates": [-3, 4, -3, 6, 8, 6], "textureOffset": [0, 9]},
-				{"coordinates": [0, -3, -1, 0, 8, 9], "textureOffset": [44, -6]}
+				{"coordinates": [-3, 4, -3, 6, 8, 6], "textureOffset": [0, 9]}
 			],
 			"animations": [
 				{
@@ -59,7 +57,7 @@
 			"id": "left_wing",
 			"invertAxis": "xy",
 			"translate": [4, -11, 0],
-			"texture": "textures/entity/chicken.png",
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
 				{"coordinates": [-4, 7, -3, 1, 4, 6], "textureOffset": [24, 13]}
@@ -70,7 +68,7 @@
 			"id": "right_wing",
 			"invertAxis": "xy",
 			"translate": [-4, -11, 0],
-			"texture": "textures/entity/chicken.png",
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
 				{"coordinates": [3, 7, -3, 1, 4, 6], "textureOffset": [24, 13]}
@@ -81,23 +79,23 @@
 			"id": "left_leg",
 			"invertAxis": "xy",
 			"translate": [1, -5, -1],
-			"texture": "textures/entity/chicken.png",
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
-				{"coordinates": [-2.25, 0, 0, 1, 5, 1], "textureOffset": [37, 3]},
-				{"coordinates": [-3.25, 0, -3, 3, 0, 4], "textureOffset": [28, 0]}
+				{"coordinates": [-2, 0, 0, 1, 5, 0], "textureOffset": [22, 27]},
+				{"coordinates": [-2.5, 0, -2, 2, 0, 2], "textureOffset": [24, 27]}
 			]
 		},
 		{
 			"part": "right_leg",
 			"id": "right_leg",
 			"invertAxis": "xy",
-			"translate": [-2.25, -5, -1],
-			"texture": "textures/entity/chicken.png",
+			"translate": [-2, -5, -1],
+			"texture": "textures/entity/chicken_baby.png",
 			"textureSize": [64, 32],
 			"boxes": [
-				{"coordinates": [1.25, 0, 0, 1, 5, 1], "textureOffset": [37, 3]},
-				{"coordinates": [0.25, 0, -3, 3, 0, 4], "textureOffset": [28, 0]}
+				{"coordinates": [1, 0, 0, 1, 5, 0], "textureOffset": [22, 27]},
+				{"coordinates": [0.5, 0, -2, 2, 0, 2], "textureOffset": [24, 27]}
 			]
 		}
 	]
