@@ -6,9 +6,8 @@
     "-": "minecraft:string"
   },
   "pattern": [
-    " - ",
-    "# #",
-    " # "
+    "-",
+    "#"
   ],
   "result": {
     "count": 1,
