@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "vanilla-enhanced:moai_patch_0",
+      "weight": 2
+    },
+    {
+      "structure": "vanilla-enhanced:moai_patch_1",
+      "weight": 2
+    },
+    {
+      "structure": "vanilla-enhanced:moai_patch_2",
+      "weight": 2
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 45,
+    "salt": 346987
+  }
+}
