@@ -38,6 +38,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ECHO_BLOCK);
         blockStateModelGenerator.registerStraightRail(ModBlocks.SUPER_POWERED_RAIL);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOW_BRICKS).family(ModBlocks.SNOW_FAMILY);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_LEAVES);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS).family(ModBlocks.PALM_FAMILY);
         blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);

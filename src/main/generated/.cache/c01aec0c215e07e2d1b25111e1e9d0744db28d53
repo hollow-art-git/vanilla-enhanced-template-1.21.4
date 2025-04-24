@@ -2,6 +2,7 @@
 555b1d4718c166f0519ec6b67cf2811b60be5995 data/minecraft/tags/block/logs_that_burn.json
 0333944e0389164f96d3b06f13aa5d13cb5ffc38 data/minecraft/tags/block/mineable/axe.json
 dc3aba8b0fd0921a7095c326003fa8043cc41de6 data/minecraft/tags/block/mineable/pickaxe.json
+06b2d2d5f886f6699b1fc19fd510512493e3726f data/minecraft/tags/block/mineable/shovel.json
 2dc4b1b8f2c81ef01c49a512e979a96e3d5ba036 data/minecraft/tags/block/rails.json
-443b1515f4cc32482adac98f4fd3ee53c55699aa data/minecraft/tags/block/walls.json
+19809c3a930d7a7c22d55fe6b328982bc28b5c55 data/minecraft/tags/block/walls.json
 aa67a32943a2787004a9a091e1091f3a269294d9 data/minecraft/tags/block/wooden_fences.json

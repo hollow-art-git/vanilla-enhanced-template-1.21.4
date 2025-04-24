@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": "minecraft:snow_block",
+    "X": "minecraft:packed_ice"
+  },
+  "pattern": [
+    "sss",
+    "sXs",
+    "sss"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:blue_ice"
+  }
+}

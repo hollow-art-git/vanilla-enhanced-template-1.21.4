@@ -43,6 +43,30 @@ public class ModBlocks {
     public static final Block ECHO_BLOCK = register(
             new Block(AbstractBlock.Settings.create().registryKey(ECHO_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool().strength(1.5f)), ECHO_BLOCK_KEY, true);
 
+    // --- SNOW BRICKS ---
+    public static final RegistryKey<Block> SNOW_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "snow_bricks"));
+    public static final Block SNOW_BRICKS = register(
+            new Block(AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK).registryKey(SNOW_BRICKS_KEY)), SNOW_BRICKS_KEY, true);
+
+    public static final RegistryKey<Block> SNOW_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "snow_bricks_slab"));
+    public static final Block SNOW_BRICKS_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK).registryKey(SNOW_BRICKS_SLAB_KEY)), SNOW_BRICKS_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> SNOW_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "snow_bricks_stairs"));
+    public static final Block SNOW_BRICKS_STAIRS = register(
+            new StairsBlock(ModBlocks.SNOW_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK).registryKey(SNOW_BRICKS_STAIRS_KEY)), SNOW_BRICKS_STAIRS_KEY, true);
+
+    public static final RegistryKey<Block> SNOW_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "snow_bricks_wall"));
+    public static final Block SNOW_BRICKS_WALL = register(
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK).registryKey(SNOW_BRICKS_WALL_KEY)), SNOW_BRICKS_WALL_KEY, true);
+
+    public static final BlockFamily SNOW_FAMILY =
+            new BlockFamily.Builder(ModBlocks.SNOW_BRICKS)
+                    .stairs(ModBlocks.SNOW_BRICKS_STAIRS)
+                    .slab(ModBlocks.SNOW_BRICKS_SLAB)
+                    .wall(ModBlocks.SNOW_BRICKS_WALL)
+                    .build();
+
     // --- SUPER POWERED RAIL ---
     public static final RegistryKey<Block> SUPER_POWERED_RAIL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "super_powered_rail"));
     public static final Block SUPER_POWERED_RAIL = register(
@@ -906,6 +930,10 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.PINK_CONCRETE_STAIRS.asItem());
             itemGroup.add(ModBlocks.PINK_CONCRETE_SLAB.asItem());
 
+            itemGroup.add(ModBlocks.SNOW_BRICKS.asItem());
+            itemGroup.add(ModBlocks.SNOW_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.SNOW_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.SNOW_BRICKS_WALL.asItem());
         });
     }
 }

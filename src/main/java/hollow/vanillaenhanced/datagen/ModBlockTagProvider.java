@@ -114,10 +114,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 //.add(ModBlocks.PALM_FENCE_GATE)
                 .add(ModBlocks.PALM_FENCE);
 
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(ModBlocks.SNOW_BRICKS)
+                .add(ModBlocks.SNOW_BRICKS_SLAB)
+                .add(ModBlocks.SNOW_BRICKS_STAIRS)
+                .add(ModBlocks.SNOW_BRICKS_WALL);
+
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ANDESITE_BRICKS_WALL)
                 .add(ModBlocks.GRANITE_BRICKS_WALL)
-                .add(ModBlocks.DIORITE_BRICKS_WALL);
+                .add(ModBlocks.DIORITE_BRICKS_WALL)
+                .add(ModBlocks.SNOW_BRICKS_WALL);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.PALM_FENCE);

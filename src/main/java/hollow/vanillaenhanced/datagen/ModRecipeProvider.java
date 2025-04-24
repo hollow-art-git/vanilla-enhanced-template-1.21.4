@@ -40,6 +40,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 // --- CRAFTING TABLE ---
 
                 offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_BLOCK, Items.ECHO_SHARD);
+                offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS, Blocks.SNOW_BLOCK);
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUPER_POWERED_RAIL, 3)
                         .pattern("g g")
@@ -298,6 +299,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_SLAB, Ingredient.ofItem(Items.DIORITE));
                 createStairsRecipe(ModBlocks.DIORITE_BRICKS_STAIRS, Ingredient.ofItem(Items.DIORITE));
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS_STAIRS,Items.DIORITE);
+
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS_SLAB, Ingredient.ofItem(ModBlocks.SNOW_BRICKS));
+                createStairsRecipe(ModBlocks.SNOW_BRICKS_STAIRS, Ingredient.ofItem(ModBlocks.SNOW_BRICKS));
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS_STAIRS,ModBlocks.SNOW_BRICKS);
 
                 createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_SLAB, Ingredient.ofItem(ModBlocks.PALM_PLANKS));
                 createStairsRecipe(ModBlocks.PALM_STAIRS, Ingredient.ofItem(ModBlocks.PALM_PLANKS));
