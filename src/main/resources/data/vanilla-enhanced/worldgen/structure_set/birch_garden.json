@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "vanilla-enhanced:big_mush_0",
+      "structure": "vanilla-enhanced:birch_garden",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "spacing": 8,
-    "separation": 4,
-    "salt": 9023474
+    "spacing": 50,
+    "separation": 35,
+    "salt": 20394
   }
 }
