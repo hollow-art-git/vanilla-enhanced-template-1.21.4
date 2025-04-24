@@ -2,12 +2,12 @@
   "placement": {
     "type": "minecraft:random_spread",
     "salt": 19238743,
-    "separation": 8,
-    "spacing": 32
+    "separation": 10,
+    "spacing": 20
   },
   "structures": [
     {
-      "structure": "minecraft:jungle_shrine",
+      "structure": "vanilla-enhanced:jungle_shrine",
       "weight": 1
     }
   ]
