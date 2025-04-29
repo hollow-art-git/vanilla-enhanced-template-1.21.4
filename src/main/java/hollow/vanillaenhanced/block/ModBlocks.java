@@ -1,6 +1,7 @@
 package hollow.vanillaenhanced.block;
 
 import hollow.vanillaenhanced.VanillaEnhanced;
+import hollow.vanillaenhanced.classes.TranslucentSlabBlock;
 import hollow.vanillaenhanced.item.ModItems;
 import hollow.vanillaenhanced.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -74,7 +75,7 @@ public class ModBlocks {
 
     public static final RegistryKey<Block> ICE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_slab"));
     public static final Block ICE_BRICKS_SLAB = register(
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_SLAB_KEY).nonOpaque()), ICE_BRICKS_SLAB_KEY, true);
+            new TranslucentSlabBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_SLAB_KEY).nonOpaque()), ICE_BRICKS_SLAB_KEY, true);
 
     public static final RegistryKey<Block> ICE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_stairs"));
     public static final Block ICE_BRICKS_STAIRS = register(
