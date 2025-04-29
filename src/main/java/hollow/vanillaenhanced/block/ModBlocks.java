@@ -67,6 +67,76 @@ public class ModBlocks {
                     .wall(ModBlocks.SNOW_BRICKS_WALL)
                     .build();
 
+    // --- ICE BRICKS ---
+    public static final RegistryKey<Block> ICE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks"));
+    public static final Block ICE_BRICKS = register(
+            new TranslucentBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_KEY).nonOpaque()), ICE_BRICKS_KEY, true);
+
+    public static final RegistryKey<Block> ICE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_slab"));
+    public static final Block ICE_BRICKS_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_SLAB_KEY).nonOpaque()), ICE_BRICKS_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> ICE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_stairs"));
+    public static final Block ICE_BRICKS_STAIRS = register(
+            new StairsBlock(ModBlocks.ICE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_STAIRS_KEY).nonOpaque()), ICE_BRICKS_STAIRS_KEY, true);
+
+    public static final RegistryKey<Block> ICE_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_wall"));
+    public static final Block ICE_BRICKS_WALL = register(
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_WALL_KEY).nonOpaque()), ICE_BRICKS_WALL_KEY, true);
+
+    public static final BlockFamily ICE_FAMILY =
+            new BlockFamily.Builder(ModBlocks.ICE_BRICKS)
+                    .stairs(ModBlocks.ICE_BRICKS_STAIRS)
+                    .slab(ModBlocks.ICE_BRICKS_SLAB)
+                    .wall(ModBlocks.ICE_BRICKS_WALL)
+                    .build();
+
+    public static final RegistryKey<Block> PACKED_ICE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "packed_ice_bricks"));
+    public static final Block PACKED_ICE_BRICKS = register(
+            new Block(AbstractBlock.Settings.copy(Blocks.PACKED_ICE).registryKey(PACKED_ICE_BRICKS_KEY)), PACKED_ICE_BRICKS_KEY, true);
+
+    public static final RegistryKey<Block> PACKED_ICE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "packed_ice_bricks_slab"));
+    public static final Block PACKED_ICE_BRICKS_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.PACKED_ICE).registryKey(PACKED_ICE_BRICKS_SLAB_KEY)), PACKED_ICE_BRICKS_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> PACKED_ICE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "packed_ice_bricks_stairs"));
+    public static final Block PACKED_ICE_BRICKS_STAIRS = register(
+            new StairsBlock(ModBlocks.PACKED_ICE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.PACKED_ICE).registryKey(PACKED_ICE_BRICKS_STAIRS_KEY)), PACKED_ICE_BRICKS_STAIRS_KEY, true);
+
+    public static final RegistryKey<Block> PACKED_ICE_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "packed_ice_bricks_wall"));
+    public static final Block PACKED_ICE_BRICKS_WALL = register(
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.PACKED_ICE).registryKey(PACKED_ICE_BRICKS_WALL_KEY)), PACKED_ICE_BRICKS_WALL_KEY, true);
+
+    public static final BlockFamily PACKED_ICE_FAMILY =
+            new BlockFamily.Builder(ModBlocks.PACKED_ICE_BRICKS)
+                    .stairs(ModBlocks.PACKED_ICE_BRICKS_STAIRS)
+                    .slab(ModBlocks.PACKED_ICE_BRICKS_SLAB)
+                    .wall(ModBlocks.PACKED_ICE_BRICKS_WALL)
+                    .build();
+
+    public static final RegistryKey<Block> BLUE_ICE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "blue_ice_bricks"));
+    public static final Block BLUE_ICE_BRICKS = register(
+            new Block(AbstractBlock.Settings.copy(Blocks.BLUE_ICE).registryKey(BLUE_ICE_BRICKS_KEY)), BLUE_ICE_BRICKS_KEY, true);
+
+    public static final RegistryKey<Block> BLUE_ICE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "blue_ice_bricks_slab"));
+    public static final Block BLUE_ICE_BRICKS_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.BLUE_ICE).registryKey(BLUE_ICE_BRICKS_SLAB_KEY)), BLUE_ICE_BRICKS_SLAB_KEY, true);
+
+    public static final RegistryKey<Block> BLUE_ICE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "blue_ice_bricks_stairs"));
+    public static final Block BLUE_ICE_BRICKS_STAIRS = register(
+            new StairsBlock(ModBlocks.BLUE_ICE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.BLUE_ICE).registryKey(BLUE_ICE_BRICKS_STAIRS_KEY)), BLUE_ICE_BRICKS_STAIRS_KEY, true);
+
+    public static final RegistryKey<Block> BLUE_ICE_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "blue_ice_bricks_wall"));
+    public static final Block BLUE_ICE_BRICKS_WALL = register(
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.BLUE_ICE).registryKey(BLUE_ICE_BRICKS_WALL_KEY)), BLUE_ICE_BRICKS_WALL_KEY, true);
+
+    public static final BlockFamily BLUE_ICE_FAMILY =
+            new BlockFamily.Builder(ModBlocks.BLUE_ICE_BRICKS)
+                    .stairs(ModBlocks.BLUE_ICE_BRICKS_STAIRS)
+                    .slab(ModBlocks.BLUE_ICE_BRICKS_SLAB)
+                    .wall(ModBlocks.BLUE_ICE_BRICKS_WALL)
+                    .build();
+
     // --- SUPER POWERED RAIL ---
     public static final RegistryKey<Block> SUPER_POWERED_RAIL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "super_powered_rail"));
     public static final Block SUPER_POWERED_RAIL = register(
@@ -934,6 +1004,19 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.SNOW_BRICKS_SLAB.asItem());
             itemGroup.add(ModBlocks.SNOW_BRICKS_STAIRS.asItem());
             itemGroup.add(ModBlocks.SNOW_BRICKS_WALL.asItem());
+
+            itemGroup.add(ModBlocks.ICE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.ICE_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.ICE_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.ICE_BRICKS_WALL.asItem());
+            itemGroup.add(ModBlocks.PACKED_ICE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.PACKED_ICE_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.PACKED_ICE_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.PACKED_ICE_BRICKS_WALL.asItem());
+            itemGroup.add(ModBlocks.BLUE_ICE_BRICKS.asItem());
+            itemGroup.add(ModBlocks.BLUE_ICE_BRICKS_SLAB.asItem());
+            itemGroup.add(ModBlocks.BLUE_ICE_BRICKS_STAIRS.asItem());
+            itemGroup.add(ModBlocks.BLUE_ICE_BRICKS_WALL.asItem());
         });
     }
 }

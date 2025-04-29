@@ -1,13 +1,13 @@
 {
   "placement": {
     "type": "minecraft:random_spread",
-    "salt": 2347899,
+    "salt": 1445656,
     "separation": 8,
     "spacing": 32
   },
   "structures": [
     {
-      "structure": "minecraft:igloo",
+      "structure": "minecraft:desert_pyramid",
       "weight": 1
     }
   ]

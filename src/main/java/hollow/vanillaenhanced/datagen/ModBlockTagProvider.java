@@ -105,6 +105,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_CONCRETE_STAIRS)
                 .add(ModBlocks.PINK_CONCRETE_SLAB)
 
+                .add(ModBlocks.ICE_BRICKS)
+                .add(ModBlocks.ICE_BRICKS_SLAB)
+                .add(ModBlocks.ICE_BRICKS_STAIRS)
+                .add(ModBlocks.ICE_BRICKS_WALL)
+                .add(ModBlocks.PACKED_ICE_BRICKS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_SLAB)
+                .add(ModBlocks.PACKED_ICE_BRICKS_STAIRS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_WALL)
+                .add(ModBlocks.BLUE_ICE_BRICKS)
+                .add(ModBlocks.BLUE_ICE_BRICKS_SLAB)
+                .add(ModBlocks.BLUE_ICE_BRICKS_STAIRS)
+                .add(ModBlocks.BLUE_ICE_BRICKS_WALL)
+
                 .add(ModBlocks.SUPER_POWERED_RAIL);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
@@ -140,6 +153,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PALM_WOOD)
                 .add(ModBlocks.STRIPPED_PALM_LOG)
                 .add(ModBlocks.STRIPPED_PALM_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.SNOW)
+                .add(ModBlocks.SNOW_BRICKS)
+                .add(ModBlocks.SNOW_BRICKS_SLAB)
+                .add(ModBlocks.SNOW_BRICKS_STAIRS)
+                .add(ModBlocks.SNOW_BRICKS_WALL);
+
+        getOrCreateTagBuilder(BlockTags.ICE)
+                .add(ModBlocks.ICE_BRICKS)
+                .add(ModBlocks.ICE_BRICKS_SLAB)
+                .add(ModBlocks.ICE_BRICKS_STAIRS)
+                .add(ModBlocks.ICE_BRICKS_WALL)
+                .add(ModBlocks.PACKED_ICE_BRICKS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_SLAB)
+                .add(ModBlocks.PACKED_ICE_BRICKS_STAIRS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_WALL)
+                .add(ModBlocks.BLUE_ICE_BRICKS)
+                .add(ModBlocks.BLUE_ICE_BRICKS_SLAB)
+                .add(ModBlocks.BLUE_ICE_BRICKS_STAIRS)
+                .add(ModBlocks.BLUE_ICE_BRICKS_WALL);
 
     }
 }

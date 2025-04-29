@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "vanilla-enhanced:block/packed_ice_bricks",
+    "side": "vanilla-enhanced:block/packed_ice_bricks",
+    "top": "vanilla-enhanced:block/packed_ice_bricks"
+  }
+}
