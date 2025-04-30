@@ -3,6 +3,9 @@
     "vanilla-enhanced:andesite_bricks_wall",
     "vanilla-enhanced:granite_bricks_wall",
     "vanilla-enhanced:diorite_bricks_wall",
-    "vanilla-enhanced:snow_bricks_wall"
+    "vanilla-enhanced:snow_bricks_wall",
+    "vanilla-enhanced:ice_bricks_wall",
+    "vanilla-enhanced:packed_ice_bricks_wall",
+    "vanilla-enhanced:blue_ice_bricks_wall"
   ]
 }

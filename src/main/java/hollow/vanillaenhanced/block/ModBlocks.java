@@ -2,6 +2,8 @@ package hollow.vanillaenhanced.block;
 
 import hollow.vanillaenhanced.VanillaEnhanced;
 import hollow.vanillaenhanced.classes.TranslucentSlabBlock;
+import hollow.vanillaenhanced.classes.TranslucentStairsBlock;
+import hollow.vanillaenhanced.classes.TranslucentWallBlock;
 import hollow.vanillaenhanced.item.ModItems;
 import hollow.vanillaenhanced.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -71,7 +73,7 @@ public class ModBlocks {
     // --- ICE BRICKS ---
     public static final RegistryKey<Block> ICE_BRICKS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks"));
     public static final Block ICE_BRICKS = register(
-            new TranslucentBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_KEY).nonOpaque()), ICE_BRICKS_KEY, true);
+            new IceBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_KEY).nonOpaque()), ICE_BRICKS_KEY, true);
 
     public static final RegistryKey<Block> ICE_BRICKS_SLAB_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_slab"));
     public static final Block ICE_BRICKS_SLAB = register(
@@ -79,11 +81,11 @@ public class ModBlocks {
 
     public static final RegistryKey<Block> ICE_BRICKS_STAIRS_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_stairs"));
     public static final Block ICE_BRICKS_STAIRS = register(
-            new StairsBlock(ModBlocks.ICE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_STAIRS_KEY).nonOpaque()), ICE_BRICKS_STAIRS_KEY, true);
+            new TranslucentStairsBlock(ModBlocks.ICE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_STAIRS_KEY).nonOpaque()), ICE_BRICKS_STAIRS_KEY, true);
 
     public static final RegistryKey<Block> ICE_BRICKS_WALL_KEY = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhanced.MOD_ID, "ice_bricks_wall"));
     public static final Block ICE_BRICKS_WALL = register(
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_WALL_KEY).nonOpaque()), ICE_BRICKS_WALL_KEY, true);
+            new TranslucentWallBlock(AbstractBlock.Settings.copy(Blocks.ICE).registryKey(ICE_BRICKS_WALL_KEY).nonOpaque()), ICE_BRICKS_WALL_KEY, true);
 
     public static final BlockFamily ICE_FAMILY =
             new BlockFamily.Builder(ModBlocks.ICE_BRICKS)

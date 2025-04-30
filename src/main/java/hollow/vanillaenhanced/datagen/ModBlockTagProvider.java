@@ -137,7 +137,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ANDESITE_BRICKS_WALL)
                 .add(ModBlocks.GRANITE_BRICKS_WALL)
                 .add(ModBlocks.DIORITE_BRICKS_WALL)
-                .add(ModBlocks.SNOW_BRICKS_WALL);
+                .add(ModBlocks.SNOW_BRICKS_WALL)
+                .add(ModBlocks.ICE_BRICKS_WALL)
+                .add(ModBlocks.PACKED_ICE_BRICKS_WALL)
+                .add(ModBlocks.BLUE_ICE_BRICKS_WALL);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.PALM_FENCE);

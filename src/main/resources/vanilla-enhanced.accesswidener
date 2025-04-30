@@ -1,0 +1,15 @@
+accessWidener v2 named
+
+accessible field net/minecraft/block/StairsBlock baseBlockState Lnet/minecraft/block/BlockState;
+# Classes
+accessible class net/minecraft/client/render/model/WeightedBakedModel$Entry
+extendable class net/minecraft/util/profiler/ProfilerTiming
+
+# Methods
+extendable method net/minecraft/resource/NamespaceResourceManager validate (Lnet/minecraft/util/Identifier;)V
+accessible method net/minecraft/resource/NamespaceResourceManager validate (Lnet/minecraft/util/Identifier;)V
+
+# Fields
+accessible field net/minecraft/client/render/model/WeightedBakedModel models Ljava/util/List;
+mutable field net/minecraft/resource/ResourceType directory Ljava/lang/String;
+mutable field net/minecraft/resource/DefaultResourcePack LOGGER Lorg/apache/logging/log4j/Logger;
