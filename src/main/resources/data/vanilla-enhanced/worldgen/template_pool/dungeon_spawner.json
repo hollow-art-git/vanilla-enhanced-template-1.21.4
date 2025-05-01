@@ -1,0 +1,16 @@
+{
+  "name": "vanilla-enhanced:dungeon_spawner",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "vanilla-enhanced:dungeon_spawner_silverfish",
+        "processors": "minecraft:empty",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    }
+  ]
+}
