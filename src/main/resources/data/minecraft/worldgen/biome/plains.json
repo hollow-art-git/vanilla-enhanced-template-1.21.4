@@ -131,7 +131,7 @@
         "type": "minecraft:rabbit",
         "maxCount": 6,
         "minCount": 2,
-        "weight": 6
+        "weight": 8
       },
       {
         "type": "minecraft:donkey",

@@ -105,16 +105,10 @@
         "weight": 12
       },
       {
-        "type": "minecraft:pig",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
         "type": "minecraft:rabbit",
         "maxCount": 6,
         "minCount": 2,
-        "weight": 6
+        "weight": 10
       },
       {
         "type": "minecraft:chicken",
