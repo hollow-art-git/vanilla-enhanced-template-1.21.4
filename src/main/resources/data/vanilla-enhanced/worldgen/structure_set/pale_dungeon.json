@@ -1,14 +1,14 @@
 {
-  "placement": {
-    "type": "minecraft:random_spread",
-    "salt": 23433463,
-    "separation": 18,
-    "spacing": 50
-  },
   "structures": [
     {
       "structure": "vanilla-enhanced:pale_dungeon",
       "weight": 1
     }
-  ]
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 12,
+    "salt": 2035984
+  }
 }
